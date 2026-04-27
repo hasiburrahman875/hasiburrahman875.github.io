@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Md Hasibur Rahman</title>
+  <meta name="description" content="Research projects on multimodal UAV tracking, STARD-Net, radiogenomic MRI classification, and deployable AI systems.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>
+          This page highlights primary and secondary research directions with technical context, current results,
+          and placeholders for links and artifacts that you can update before postdoc applications.
+        </p>
+      </div>
+    </section>
+
+    <section id="project-uav-fusion" class="section project-block">
+      <div class="container">
+        <h2>Uncertainty-Aware Multimodal UAV Tracking with Heterogeneous LiDAR Sensors</h2>
+        <p class="project-lead">
+          A track-first multimodal fusion framework for tiny airborne object tracking using sparse temporal tubes,
+          transformer-based measurement prediction, uncertainty estimation, and EKF-style innovation gating.
+        </p>
+
+        <h3>Problem</h3>
+        <p>
+          Tiny UAVs produce sparse, unstable, and noisy observations across heterogeneous sensors. Direct raw point-cloud
+          concatenation can fail when sensors have different fields of view, density, range, timing, and failure modes.
+        </p>
+
+        <h3>Method</h3>
+        <p>
+          The framework builds short temporal point tubes from heterogeneous sensors, predicts object existence and 3D
+          correction using a sparse tube transformer-style model, estimates measurement uncertainty, and updates tracks
+          through uncertainty-aware EKF-style filtering and innovation gating.
+        </p>
+
+        <h3>Key Contributions</h3>
+        <ul class="clean-list">
+          <li>Sparse temporal tube representation for tiny airborne object tracking</li>
+          <li>Heterogeneous multi-LiDAR sensing using sensors such as Livox Avia and Mid360/LiDAR360</li>
+          <li>Track-first fusion instead of raw point concatenation</li>
+          <li>Transformer-based measurement prediction with uncertainty estimation</li>
+          <li>Innovation-aware filtering to reduce catastrophic updates from unreliable observations</li>
+          <li>Real-world evaluation under sparse, noisy, and missing observations</li>
+        </ul>
+
+        <h3>Results</h3>
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <p class="metric-label">Matched GT Frames</p>
+            <p class="metric-value">1539 / 1600</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Match Rate</p>
+            <p class="metric-value">96.2%</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">RMSE3D</p>
+            <p class="metric-value">0.802 m</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Recall@1.0m</p>
+            <p class="metric-value">78.6%</p>
+          </article>
+        </div>
+
+        <h3>Figures and Demo</h3>
+        <div class="figure-grid">
+          <div class="image-frame">
+            <img src="assets/uav_fusion_pipeline.png" alt="UAV fusion pipeline figure" data-fallback="[ADD FIGURE: assets/uav_fusion_pipeline.png]">
+            <div class="image-fallback"></div>
+          </div>
+          <div class="image-frame">
+            <img src="assets/uav_tracking_result.png" alt="UAV tracking result figure" data-fallback="[ADD FIGURE: assets/uav_tracking_result.png]">
+            <div class="image-fallback"></div>
+          </div>
+          <div class="image-frame">
+            <img src="assets/demo_uav_tracking.gif" alt="UAV tracking demo animation" data-fallback="[ADD DEMO GIF: assets/demo_uav_tracking.gif]">
+            <div class="image-fallback"></div>
+          </div>
+        </div>
+
+        <div class="inline-links">
+          <a href="[ADD CODE LINK]" target="_blank" rel="noopener noreferrer">[ADD CODE LINK]</a>
+          <a href="[ADD TECHNICAL REPORT LINK]" target="_blank" rel="noopener noreferrer">[ADD TECHNICAL REPORT LINK]</a>
+          <a href="[ADD DEMO LINK]" target="_blank" rel="noopener noreferrer">[ADD DEMO LINK]</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-stard-net" class="section project-block alt-surface">
+      <div class="container">
+        <h2>STARD-Net: UAV-Based Spatio-Temporal Detection and Tracking</h2>
+        <p>
+          STARD-Net studies UAV-based spatio-temporal detection and tracking for real-world spatial intelligence.
+          The work focuses on robust representation learning and trajectory-aware modeling for airborne sensing scenarios.
+        </p>
+        <p><strong>Publication note:</strong> Published in ACM Transactions on Spatial Algorithms and Systems.</p>
+
+        <div class="image-frame">
+          <img src="assets/stardnet_figure.png" alt="STARD-Net figure" data-fallback="[ADD FIGURE: assets/stardnet_figure.png]">
+          <div class="image-fallback"></div>
+        </div>
+
+        <div class="inline-links">
+          <a href="[ADD PAPER LINK]" target="_blank" rel="noopener noreferrer">[ADD PAPER LINK]</a>
+          <a href="[ADD DOI]" target="_blank" rel="noopener noreferrer">[ADD DOI]</a>
+          <a href="[ADD CODE LINK]" target="_blank" rel="noopener noreferrer">[ADD CODE LINK]</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-radiogenomic" class="section project-block">
+      <div class="container">
+        <h2>Radiogenomic Brain Tumor Classification from MRI Sequences</h2>
+        <p>
+          This project explores multimodal MRI-based radiogenomic classification for brain tumor analysis. It was recognized
+          among the Top 3 Best Posters at the Pathways 2026 Symposium organized by NextGen Precision Health.
+        </p>
+        <ul class="clean-list">
+          <li>Multimodal MRI sequences</li>
+          <li>Radiogenomic classification</li>
+          <li>Healthcare data mining and computer vision</li>
+          <li>Poster recognition at Pathways 2026 Symposium / NextGen Precision Health</li>
+          <li>Secondary biomedical AI research direction</li>
+        </ul>
+
+        <div class="image-frame">
+          <img src="assets/radiogenomic_poster.png" alt="Radiogenomic poster" data-fallback="[ADD FIGURE: assets/radiogenomic_poster.png]">
+          <div class="image-fallback"></div>
+        </div>
+
+        <div class="inline-links">
+          <a href="[ADD GITHUB LINK]" target="_blank" rel="noopener noreferrer">[ADD GITHUB LINK]</a>
+          <a href="[ADD POSTER PDF LINK]" target="_blank" rel="noopener noreferrer">[ADD POSTER PDF LINK]</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-selected-systems" class="section project-block alt-surface">
+      <div class="container">
+        <h2>Selected AI/Software Systems</h2>
+        <p>
+          A concise collection of deployable AI/software projects, including KeepScoreAI and other applied AI systems work.
+          This section is intentionally short to keep the main focus on multimodal perception and tracking research.
+        </p>
+        <ul class="clean-list">
+          <li>KeepScoreAI - [ADD ONE-LINE DESCRIPTION]</li>
+          <li>[ADD ADDITIONAL PROJECT NAME] - [ADD ONE-LINE DESCRIPTION]</li>
+          <li>[ADD ADDITIONAL PROJECT NAME] - [ADD ONE-LINE DESCRIPTION]</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: [ADD DATE]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
