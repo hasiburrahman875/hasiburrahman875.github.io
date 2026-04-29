@@ -31,7 +31,7 @@ It uses plain HTML, CSS, and minimal JavaScript so content stays easy to edit ma
 │   ├── main.js
 │   └── news-data.js
 ├── assets/
-│   └── (images/PDF placeholders + cv.pdf)
+│   └── (images, PDFs, and cv.pdf)
 ├── CV_Hasibur_Rahman_postdoc.pdf
 ├── kraft-demo/
 └── stardnet-demo/
@@ -39,28 +39,15 @@ It uses plain HTML, CSS, and minimal JavaScript so content stays easy to edit ma
 
 ## Main Content Goals
 
-1. `index.html`: research-first homepage with interests and current news.
+1. `index.html`: research-first homepage with selected publications and featured projects.
 2. `projects.html`: every project has quick links for code/demo/paper/presentation/details.
 3. `projects/*.html`: one detailed project page per project.
 4. `teaching.html`, `profile.html`, `thoughts.html`: complete personal package around research identity.
 5. `cv.html`: full academic details and downloadable CV.
-6. `js/news-data.js`: one-line-per-item homepage news feed updates.
-
-## Quick News Update (One-Line Edit)
-
-Open `js/news-data.js` and add one object inside `window.NEWS_ITEMS`:
-
-```js
-{
-  date: "May 2026",
-  text: "Your new update text",
-  link: "https://optional-link.example"
-}
-```
+6. `postdoc.html`: research collaboration and postdoctoral fit overview.
 
 ## Editing Tips
 
-- Replace placeholder tokens like `[ADD ... LINK]` as new artifacts become available.
 - Add project figures into `assets/` and update references in project pages.
 - Keep demo files in current folders or update links if file names move.
 

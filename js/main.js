@@ -40,7 +40,7 @@
     frame.classList.add("is-missing");
     var fallback = frame.querySelector(".image-fallback");
     if (fallback) {
-      fallback.textContent = img.getAttribute("data-fallback") || "[ADD FIGURE]";
+      fallback.textContent = img.getAttribute("data-fallback") || "Figure unavailable";
     }
   }
 

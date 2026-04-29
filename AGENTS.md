@@ -4,7 +4,7 @@
 
 - Maintain an academic, professional tone suitable for postdoc applications.
 - Do not invent any publication, metric, award, collaborator, institution, or result.
-- If details are missing, use explicit placeholders such as `[ADD PAPER LINK]`, `[ADD DOI]`, `[ADD FIGURE]`, `[ADD CODE LINK]`.
+- If details are missing, omit the public link or label the item as unavailable until a verified artifact is added.
 
 ## Design and UX
 
@@ -33,11 +33,10 @@
 - Keep navigation consistent: Home | Research | Projects | Publications | CV.
 - Ensure internal links remain correct after edits.
 
-## Placeholders and Assets
+## Assets
 
-- Keep placeholder tokens easy to search and replace.
 - Keep assets inside `assets/` and update references carefully.
-- Do not remove placeholder files unless replacements are added.
+- Do not remove existing files unless replacements are added.
 
 ## Deployment
 
