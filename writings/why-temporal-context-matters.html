@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Temporal Context Matters | Md Hasibur Rahman</title>
+  <meta name="description" content="Technical reflection on temporal context for weak-target perception and robust tracking.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a class="active" href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container max-narrow">
+        <p class="project-kicker">Technical Reflection</p>
+        <h1>Why Temporal Context Matters</h1>
+        <p>
+          Small airborne targets are often near the visual noise floor. A single frame may not contain enough evidence
+          for stable detection, especially under camera motion, blur, and cluttered backgrounds.
+        </p>
+        <p>
+          Temporal modeling helps aggregate weak cues across frames. Instead of asking "is this target obvious now?"
+          the model asks "is there persistent evidence of a target over time?" This shift improves continuity and
+          reduces fragile frame-to-frame decisions.
+        </p>
+        <p>
+          STARD-Net, V-USDT, and KRAfT all follow this principle in different ways: sequence-aware feature extraction,
+          temporal association, and geometry-aware recovery under missing observations.
+        </p>
+        <p><a class="btn" href="../thoughts.html">Back to Thoughts</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

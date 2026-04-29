@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STARD-Net Project | Md Hasibur Rahman</title>
+  <meta name="description" content="Project page for STARD-Net: SpatioTemporal Attention for Robust Detection of Tiny Airborne Objects.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a class="active" href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="project-kicker">Project Detail Page</p>
+        <h1>STARD-Net: SpatioTemporal Attention for Robust Detection of Tiny Airborne Objects from Moving Drones</h1>
+        <div class="project-meta badge-row">
+          <span class="meta-chip">Venue: ACM TSAS</span>
+          <span class="meta-chip">Publication Year: 2026</span>
+          <span class="meta-chip">DOI: 10.1145/3787467</span>
+        </div>
+        <div class="project-actions">
+          <a class="action-link" href="../projects.html">Back to Projects</a>
+          <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+          <a class="action-link" href="../STARDnet%20Demo/mvaaod_curated/Clip_49.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="action-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="action-link" href="../publications.html#presentations">Presentation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Problem Statement</h2>
+          <p>
+            Detecting tiny airborne objects from moving drone platforms is difficult due to object scale,
+            camera motion, cluttered backgrounds, camouflage effects, and intermittent occlusions.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Research Gap</h2>
+          <p>
+            Many frame-centric detectors miss weak targets and underuse temporal continuity. This leads to unstable
+            predictions when appearance cues are faint or quickly changing.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p class="project-lead">
+          STARD-Net integrates spatial feature enhancement, temporal sequence modeling, and spatiotemporal attention
+          to improve tiny-target detection reliability in dynamic drone scenes.
+        </p>
+        <ul class="clean-list">
+          <li>Drone Receptive Field Block (DRFB) for multiscale spatial feature extraction</li>
+          <li>ConvLSTM temporal module for sequence-level motion context</li>
+          <li>SpatioTemporal Attention Block (STAB) for contextual aggregation</li>
+          <li>Transformer-enhanced detection head for robust final prediction</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results</h2>
+        <p>
+          The paper reports significant performance gains across multiple public airborne object datasets while
+          maintaining real-time inference behavior.
+        </p>
+        <h3>Qualitative Comparison</h3>
+        <div class="callout">
+          Compared with single-frame or weak temporal baselines, STARD-Net better preserves tiny object continuity in
+          cluttered and motion-heavy clips, reducing missed detections for faint airborne targets.
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Demo Clips</h2>
+        <div class="video-grid">
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../STARDnet%20Demo/mvaaod_curated/Clip_49.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../STARDnet%20Demo/mvaaod_curated/Clip_44.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../STARDnet%20Demo/nps_curated/Clip_49.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRAfT Project | Md Hasibur Rahman</title>
+  <meta name="description" content="Project page for KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a class="active" href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <div class="project-header">
+          <p class="project-kicker">Project Detail Page</p>
+          <h1>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h1>
+          <div class="project-meta badge-row">
+            <span class="meta-chip">Status: Accepted</span>
+            <span class="meta-chip">Venue: IEEE ICPR 2026</span>
+            <span class="meta-chip">Domain: UAV Swarm Tracking</span>
+          </div>
+        </div>
+        <div class="project-actions">
+          <a class="action-link" href="../projects.html">Back to Projects</a>
+          <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+          <a class="action-link" href="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="action-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="action-link" href="../publications.html#presentations">Presentation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Problem Statement</h2>
+          <p>
+            UAV swarm tracking in real scenes is difficult when objects are small, move rapidly, overlap,
+            or disappear temporarily. Standard tracking pipelines can drift during ambiguous motion and heavy clutter.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Research Gap</h2>
+          <p>
+            Existing approaches often underuse swarm formation structure and cannot reliably recover from missed
+            targets without introducing aggressive false associations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p class="project-lead">
+          KRAfT combines residual motion modeling, diffusion-style temporal refinement, and formation-aware constraints
+          with conservative recovery to stabilize association under difficult swarm dynamics.
+        </p>
+        <ul class="clean-list">
+          <li>Temporal residual modeling to capture hard motion transitions</li>
+          <li>Formation-aware reasoning to preserve swarm geometry</li>
+          <li>Association and update rules designed for conservative recovery</li>
+          <li>Robust tracking behavior under missing and ambiguous observations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results</h2>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <p class="metric-label">HOTA (Benchmark 1)</p>
+            <p class="metric-value">80.37</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">HOTA (Benchmark 2)</p>
+            <p class="metric-value">70.59</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">HOTA (Benchmark 3)</p>
+            <p class="metric-value">65.31</p>
+          </article>
+        </div>
+
+        <h3>Qualitative Comparison</h3>
+        <div class="callout">
+          Compared with diffusion-only tracking baselines, KRAfT shows stronger formation consistency and better
+          recovery of missed targets in difficult clips (as reflected in the provided strict-win demo videos).
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Demo Clips</h2>
+        <div class="video-grid">
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-06_strict_win.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-frame">
+            <video controls preload="metadata">
+              <source src="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

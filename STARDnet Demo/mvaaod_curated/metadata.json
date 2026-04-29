@@ -1,0 +1,25 @@
+{
+  "dataset": "mvaaod_subset",
+  "image_dir": "/cluster/pixstor/madrias-lab/Hasibur/STARDNet/runs/gt_vs_detection_videos/subsets/mvaaod/test",
+  "gt_label_dir": "/cluster/pixstor/madrias-lab/Hasibur/STARDNet/runs/gt_vs_detection_videos/subsets/mvaaod/test",
+  "pred_label_dir": "/cluster/pixstor/madrias-lab/Hasibur/STARDNet/runs/detect_gt_pred/mvaaod_curated_gt_det/labels",
+  "fps": 20.0,
+  "frame_step": 1,
+  "videos": [
+    {
+      "clip_id": "Clip_41",
+      "video_path": "runs/gt_vs_detection_videos/mvaaod_curated/Clip_41.mp4",
+      "frames": 400
+    },
+    {
+      "clip_id": "Clip_44",
+      "video_path": "runs/gt_vs_detection_videos/mvaaod_curated/Clip_44.mp4",
+      "frames": 400
+    },
+    {
+      "clip_id": "Clip_49",
+      "video_path": "runs/gt_vs_detection_videos/mvaaod_curated/Clip_49.mp4",
+      "frames": 400
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+path: /cluster/pixstor/madrias-lab/Hasibur/STARDNet/runs/gt_vs_detection_videos/subsets/mvaaod
+train: test
+val: test
+test: test
+annotation_path: /cluster/pixstor/madrias-lab/Hasibur/STARDNet/runs/gt_vs_detection_videos/subsets/mvaaod
+annotation_train: test
+annotation_val: test
+annotation_test: test
+video_root_path: /cluster/pixstor/madrias-lab/Hasibur/STARDNet_1/Datasets/mvaaod/Videos
+video_root_path_train: /cluster/pixstor/madrias-lab/Hasibur/STARDNet_1/Datasets/mvaaod/Videos/test
+video_root_path_val: /cluster/pixstor/madrias-lab/Hasibur/STARDNet_1/Datasets/mvaaod/Videos/test
+video_root_path_test: /cluster/pixstor/madrias-lab/Hasibur/STARDNet_1/Datasets/mvaaod/Videos/test
+nc: 3
+names:
+- class0
+- class1
+- class2

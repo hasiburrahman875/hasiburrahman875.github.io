@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Augmented UAV Dataset Project | Md Hasibur Rahman</title>
+  <meta name="description" content="Project page for the augmented dataset for vision-based UAV detection and tracking (IEEE AIPR 2023).">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a class="active" href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="project-kicker">Project Detail Page</p>
+        <h1>An Augmented Dataset for Vision-based Unmanned Aerial Vehicles Detection and Tracking</h1>
+        <div class="project-meta badge-row">
+          <span class="meta-chip">Venue: IEEE AIPR 2023</span>
+          <span class="meta-chip">DOI: 10.1109/AIPR60534.2023.10440657</span>
+          <span class="meta-chip">Project Type: Dataset + Benchmark</span>
+        </div>
+        <div class="project-actions">
+          <a class="action-link" href="../projects.html">Back to Projects</a>
+          <a class="action-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code/Dataset</a>
+          <a class="action-link" href="../STARDnet%20Demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="action-link" href="../publications.html#presentations">Presentation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Problem Statement</h2>
+          <p>
+            Vision-based UAV detection and tracking needs high-quality data that represents realistic weak-target,
+            moving-camera, and cluttered scenarios.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Research Gap</h2>
+          <p>
+            Public resources for UAV-to-UAV detection/tracking are limited in diversity and difficulty, making it hard
+            to evaluate robustness consistently across challenging operating conditions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p class="project-lead">
+          The work builds an augmented dataset and benchmark workflow to support robust research on weak-target
+          perception and temporal visual analysis in airborne settings.
+        </p>
+        <ul class="clean-list">
+          <li>Curated and augmented UAV image sequences for detection/tracking research</li>
+          <li>Designed to support reproducible model evaluation under practical challenges</li>
+          <li>Provides a shared base for comparing methods under similar conditions</li>
+          <li>Public release through project repository for wider community use</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results and Impact</h2>
+        <p>
+          The dataset supports repeatable benchmarking for weak-target UAV detection/tracking and was published in
+          IEEE AIPR 2023.
+        </p>
+
+        <h3>Qualitative Comparison</h3>
+        <div class="callout">
+          Compared with smaller or less varied UAV resources, this augmented dataset provides broader scene variation
+          and stronger stress conditions for evaluating detection/tracking robustness.
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Demo Clip</h2>
+        <div class="video-frame">
+          <video controls preload="metadata">
+            <source src="../STARDnet%20Demo/nps_curated/Clip_41.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

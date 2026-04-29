@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reliability Before Leaderboard | Md Hasibur Rahman</title>
+  <meta name="description" content="Research note on reliability-centric evaluation for dynamic visual perception systems.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a class="active" href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container max-narrow">
+        <p class="project-kicker">Research Note</p>
+        <h1>Reliability Before Leaderboard</h1>
+        <p>
+          In dynamic sensing problems, a slightly higher benchmark score does not always mean a safer or more useful
+          model. My research perspective prioritizes behavior under stress: clutter, partial observations, sensor
+          mismatch, and weak target visibility.
+        </p>
+        <p>
+          A reliable model should degrade gracefully, report uncertainty consistently, and avoid catastrophic updates
+          when evidence is ambiguous. This is why I emphasize conservative recovery, structured temporal constraints,
+          and robust evaluation protocols across my UAV tracking work.
+        </p>
+        <p>
+          As a working rule: if a method performs well only in clean conditions, it is a promising prototype; if it
+          remains stable in difficult conditions, it is closer to deployment.
+        </p>
+        <p><a class="btn" href="../thoughts.html">Back to Thoughts</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

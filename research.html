@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Md Hasibur Rahman</title>
-  <meta name="description" content="Research vision and themes for robust multimodal UAV perception, sensor fusion, and uncertainty-aware AI.">
+  <meta name="description" content="Research vision, themes, and methodology for robust UAV perception, spatiotemporal modeling, and dynamic visual data understanding.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,6 +16,9 @@
         <a class="active" href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="profile.html">Profile</a>
+        <a href="thoughts.html">Thoughts</a>
         <a href="cv.html">CV</a>
       </nav>
     </div>
@@ -26,44 +29,74 @@
       <div class="container">
         <h1>Research Vision</h1>
         <p>
-          My research centers on robust multimodal perception for sparse, noisy, and safety-critical sensing environments.
-          I am particularly interested in making detection and tracking systems dependable under real-world constraints,
-          including sensor mismatch, partial observations, and failure-prone conditions.
+          My research centers on robust detection, association, and temporal reasoning for small or weak targets in
+          challenging environments. I work on methods that remain dependable under clutter, rapid motion, partial
+          observability, and noisy measurements.
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2>Core Themes</h2>
-        <div class="theme-grid">
+        <h2>Core Research Themes</h2>
+        <div class="card-grid">
           <article class="card">
-            <h3>Theme 1: Robust UAV Perception</h3>
+            <h3>Spatiotemporal Modeling for Dynamic Visual Data</h3>
             <p>
-              Detection and tracking of small airborne objects from moving platforms under occlusion, clutter,
-              sparse observations, and domain shift.
+              Designing models that jointly learn spatial context and temporal continuity to support stable tracking and
+              interpretation over image sequences.
             </p>
           </article>
+
           <article class="card">
-            <h3>Theme 2: Multimodal Sensor Fusion</h3>
+            <h3>Small-Target and Weak-Signal Perception</h3>
             <p>
-              Heterogeneous LiDAR/radar/vision fusion for real-world sensing, especially when sensors have different
-              fields of view, density, range, failure modes, and timing.
+              Improving sensitivity to tiny airborne objects with limited visual evidence, especially in low-contrast,
+              high-motion, and occlusion-heavy scenes.
             </p>
           </article>
+
           <article class="card">
-            <h3>Theme 3: Uncertainty-Aware Tracking</h3>
+            <h3>UAV Swarm Detection and Multi-Object Tracking</h3>
             <p>
-              Track-first fusion, temporal tube modeling, transformer-based measurement prediction,
-              EKF-style filtering, uncertainty estimation, and failure-aware sensor updates.
+              Leveraging temporal association and formation-aware constraints to reduce identity switches, misses,
+              and failure propagation in swarm-level tracking.
             </p>
           </article>
+
           <article class="card">
-            <h3>Theme 4: Translational Multimodal AI</h3>
+            <h3>Multimodal and 2D/3D Sensing Pipelines</h3>
             <p>
-              Transfer of multimodal representation learning and uncertainty-aware modeling to biomedical imaging
-              and remote sensing.
+              Building end-to-end experimentation pipelines across camera, LiDAR, and radar streams for reliable,
+              deployment-oriented evaluation.
             </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Methodology Style</h2>
+        <div class="two-col">
+          <article class="surface-card">
+            <h3>Modeling Principles</h3>
+            <ul class="clean-list">
+              <li>Temporal consistency first, rather than frame-wise decisions only</li>
+              <li>Attention to weak cues and motion patterns in long sequences</li>
+              <li>Structured constraints (formation, geometry, gating) for robust association</li>
+              <li>Robustness over ideal-case benchmark optimization</li>
+            </ul>
+          </article>
+
+          <article class="surface-card">
+            <h3>Evaluation Principles</h3>
+            <ul class="clean-list">
+              <li>Stress-testing under occlusion, clutter, and missing observations</li>
+              <li>Reproducible protocols for dynamic 2D/3D data pipelines</li>
+              <li>Metrics aligned with deployment reliability, not only detection score</li>
+              <li>Qualitative diagnostics to explain model behavior in failure cases</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -71,13 +104,13 @@
 
     <section class="section">
       <div class="container">
-        <h2>Future Directions</h2>
+        <h2>Current and Near-Term Directions</h2>
         <ul class="clean-list">
-          <li>Calibration-free or weakly calibrated multimodal perception</li>
-          <li>Uncertainty-aware multi-sensor fusion</li>
-          <li>Tiny object tracking under sparse 3D sensing</li>
-          <li>UAV/remote-sensing foundation models for real-world deployment</li>
-          <li>Multimodal biomedical AI with uncertainty and clinical review</li>
+          <li>Formation-aware diffusion and residual tracking methods for UAV swarms</li>
+          <li>Tiny airborne object detection with stronger temporal context integration</li>
+          <li>Cross-dataset generalization studies for robust low-altitude sensing</li>
+          <li>Deployment-oriented model validation in ROS2 and GPU-based environments</li>
+          <li>Translating reliable temporal perception ideas to broader dynamic data domains</li>
         </ul>
       </div>
     </section>
@@ -86,7 +119,7 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
-      <p>Last updated: [ADD DATE]</p>
+      <p>Last updated: April 29, 2026</p>
     </div>
   </footer>
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-USDT Project | Md Hasibur Rahman</title>
+  <meta name="description" content="Project page for V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a class="active" href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="project-kicker">Project Detail Page</p>
+        <h1>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h1>
+        <div class="project-meta badge-row">
+          <span class="meta-chip">Venue: IEEE MDM 2025</span>
+          <span class="meta-chip">DOI: 10.1109/MDM65600.2025.00026</span>
+          <span class="meta-chip">Type: Conference Paper</span>
+        </div>
+        <div class="project-actions">
+          <a class="action-link" href="../projects.html">Back to Projects</a>
+          <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+          <a class="action-link" href="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="action-link" href="../publications.html#presentations">Presentation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Problem Statement</h2>
+          <p>
+            UAV swarm tracking requires stable identity association in scenes where targets are small, visually similar,
+            and frequently occluded.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Research Gap</h2>
+          <p>
+            Appearance-only or short-term association methods can lose track continuity when swarm members overlap or
+            when detections are weak. Formation structure is often underutilized.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p class="project-lead">
+          V-USDT combines a robust UAV detector with formation-aware swarm tracking to strengthen temporal association
+          and reduce identity ambiguity during difficult tracking intervals.
+        </p>
+        <ul class="clean-list">
+          <li>Detection component designed for small airborne targets</li>
+          <li>Formation constraints used during multi-object association</li>
+          <li>Temporal consistency to stabilize tracking trajectories over time</li>
+          <li>Integrated detection + tracking pipeline for swarm-level scenarios</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results</h2>
+        <div class="metric-grid">
+          <article class="metric-card">
+            <p class="metric-label">MOTA</p>
+            <p class="metric-value">87.1 to 90.4</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">IDF1</p>
+            <p class="metric-value">91.1 to 93.1</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Misses</p>
+            <p class="metric-value">78.24 to 63.29</p>
+          </article>
+        </div>
+
+        <h3>Qualitative Comparison</h3>
+        <div class="callout">
+          Compared with tracking approaches that do not explicitly exploit swarm structure, V-USDT maintains stronger
+          trajectory continuity during occlusion and weak-target phases.
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-surface">
+      <div class="container">
+        <h2>Demo</h2>
+        <p class="muted">Representative swarm-tracking clip for visual context.</p>
+        <div class="video-frame">
+          <video controls preload="metadata">
+            <source src="../KRAfT%20demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <p>Last updated: April 29, 2026</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
