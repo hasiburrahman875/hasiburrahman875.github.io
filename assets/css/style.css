@@ -1,5 +1,8 @@
 :root {
   --bg: #f7faf8;
+  --bg-wash-a: rgba(47, 111, 115, 0.12);
+  --bg-wash-b: rgba(151, 181, 163, 0.18);
+  --bg-wash-c: rgba(213, 229, 219, 0.32);
   --surface: #ffffff;
   --surface-soft: #eef6f2;
   --text: #24313a;
@@ -22,7 +25,12 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--bg) 0, #ffffff 320px);
+  background:
+    radial-gradient(circle at 10% -10%, var(--bg-wash-a) 0, transparent 34rem),
+    radial-gradient(circle at 88% 6%, var(--bg-wash-b) 0, transparent 30rem),
+    radial-gradient(circle at 50% 100%, var(--bg-wash-c) 0, transparent 34rem),
+    linear-gradient(180deg, var(--bg) 0, #ffffff 420px);
+  background-attachment: fixed;
   color: var(--text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
@@ -88,7 +96,8 @@ ul {
 
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
 }
 
 .nav-wrap {
