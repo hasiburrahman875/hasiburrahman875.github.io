@@ -318,17 +318,26 @@ main {
 }
 
 .pub-item,
-.publication-item,
-.project-entry {
+.publication-item {
   border: 0;
   border-bottom: 1px solid var(--border);
   border-radius: 0;
   padding: 0 0 14px;
 }
 
+.project-entry {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 16px 18px;
+}
+
+.project-entry p:last-child {
+  margin-bottom: 0;
+}
+
 .pub-item:last-child,
-.publication-item:last-child,
-.project-entry:last-child {
+.publication-item:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
