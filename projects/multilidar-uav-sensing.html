@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiLiDAR UAV Sensing | Md Hasibur Rahman</title>
+  <meta name="description" content="Ongoing MultiLiDAR UAV sensing project on heterogeneous LiDAR-based point-cloud perception, temporal accumulation, clustering, and reliability-aware fusion.">
+  <meta name="keywords" content="MultiLiDAR, UAV-based perception, point clouds, multimodal AI, LiDAR, tracking, applied AI engineering">
+  <meta property="og:title" content="MultiLiDAR UAV Sensing | Md Hasibur Rahman">
+  <meta property="og:description" content="Heterogeneous LiDAR-based perception for robust UAV-scale object detection and tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hasiburrahman875.github.io/projects/multilidar-uav-sensing.html">
+  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/profile.jpg">
+  <link rel="canonical" href="https://hasiburrahman875.github.io/projects/multilidar-uav-sensing.html">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../cv.html">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-hero">
+      <div class="container">
+        <p class="project-kicker">Multimodal AI · Point Clouds · UAV-Based Perception · Applied AI Engineering · Ongoing</p>
+        <h1 class="project-title">MultiLiDAR UAV Sensing</h1>
+        <p class="lead">Heterogeneous LiDAR-Based Perception for Robust UAV-Scale Object Detection and Tracking</p>
+        <p class="meta">Ongoing research / applied AI engineering project.</p>
+        <div class="project-links">
+          <a href="../projects.html">Projects</a>
+          <a href="../research.html">Research Context</a>
+          <a href="mailto:mrpk9@mst.edu">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container project-layout">
+      <section class="project-section">
+        <h2>Overview</h2>
+        <p>
+          This project studies robust UAV-scale object perception from heterogeneous LiDAR streams. The pipeline processes sparse and asynchronous point-cloud measurements, accumulates temporal evidence, extracts candidate object clusters, and supports reliability-aware tracking and fusion under missing or degraded sensor observations.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Problem Statement</h2>
+        <p>
+          LiDAR-based airborne object perception is difficult because targets may generate very sparse returns, individual frames can be nearly empty, sensors have different fields of view and timestamp behavior, and naive point concatenation can fail under misalignment or degraded measurements.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Real-world UAV sensing systems need perception pipelines that can remain useful when measurements are sparse, asynchronous, or sensor-dependent. MultiLiDAR sensing provides complementary coverage, but requires careful temporal accumulation, candidate generation, and reliability-aware fusion rather than simple raw-data merging.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Methodology</h2>
+        <p>
+          The pipeline is designed as a practical multimodal AI system for sparse point-cloud perception and tracking. At a high level, it includes:
+        </p>
+        <ul>
+          <li>Per-sensor point filtering and timestamp organization.</li>
+          <li>Temporal accumulation over short windows.</li>
+          <li>Candidate extraction using clustering and density-based grouping.</li>
+          <li>Track-centric or candidate-centric fusion across heterogeneous LiDAR streams.</li>
+          <li>Reliability-aware updates under sparse, missing, or degraded measurements.</li>
+          <li>Evaluation through detection/tracking metrics and qualitative trajectory plots.</li>
+        </ul>
+        <!-- Add trajectory plots, clustering visualizations, and qualitative tracking examples here. -->
+      </section>
+
+      <section class="project-section">
+        <h2>Key Contributions</h2>
+        <ul>
+          <li>Heterogeneous LiDAR pipeline for sparse UAV-scale object perception.</li>
+          <li>Temporal point-cloud accumulation for recovering weak evidence.</li>
+          <li>Cluster-based candidate extraction from sparse returns.</li>
+          <li>Reliability-aware fusion/tracking under missing or degraded observations.</li>
+          <li>Applied AI engineering pipeline for preprocessing, evaluation, visualization, and failure analysis.</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Experimental Setup</h2>
+        <p>
+          Experiments use multi-sensor point-cloud sequences with heterogeneous LiDAR streams. Evaluation focuses on localization/tracking quality, recall under sparse observations, robustness to missing measurements, and qualitative trajectory behavior.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Quantitative Results</h2>
+        <p>Quantitative results will be added after the evaluation table is finalized.</p>
+      </section>
+
+      <section class="project-section">
+        <h2>My Role</h2>
+        <p>
+          My contributions include pipeline design, point-cloud preprocessing, temporal accumulation, candidate extraction, fusion/tracking logic, evaluation scripts, visualization, and failure-mode analysis.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Related Work / Status</h2>
+        <p>
+          Ongoing research and applied AI engineering project connected to my broader work on reliable multimodal perception. This page does not claim a publication status.
+        </p>
+      </section>
+
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="kraft.html">Previous: KRAfT</a>
+        <a href="../projects.html">Back to Projects</a>
+        <a href="v-usdt.html">Next: V-USDT</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <div class="footer-links">
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../postdoc.html">Postdoc Fit</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
