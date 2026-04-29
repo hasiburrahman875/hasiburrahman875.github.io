@@ -1,9 +1,5 @@
 window.NEWS_ITEMS = [
   {
-    date: "April 29, 2026",
-    text: "Research-focused portfolio package updated with project pages, teaching profile, and writings tab."
-  },
-  {
     date: "2026",
     text: "KRAfT accepted for presentation at IEEE ICPR 2026.",
     link: "https://icpr2026.org/acceptedPapers.html"

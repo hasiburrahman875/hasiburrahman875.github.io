@@ -374,6 +374,17 @@ a:hover {
   margin-left: auto;
 }
 
+.mini-profile {
+  max-width: 132px;
+  min-height: 132px;
+  border-radius: 12px;
+  margin: 0.8rem 0 0.3rem;
+}
+
+.mini-profile img {
+  border-radius: 12px;
+}
+
 .image-frame img,
 .video-frame video {
   width: 100%;
