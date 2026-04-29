@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Md Hasibur Rahman</title>
-  <meta name="description" content="Project directory with code, demo, paper, presentation, and detailed project pages for each major research contribution.">
+  <meta name="description" content="Research project directory with details, code, demo, paper, and presentation links.">
+  <meta name="keywords" content="UAV tracking projects, STARD-Net, KRAfT, V-USDT, radiogenomic MRI">
+  <meta property="og:title" content="Projects | Md Hasibur Rahman">
+  <meta property="og:description" content="Project pages with problem, methodology, results, impact, and research artifacts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hasiburrahman875.github.io/projects.html">
+  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/profile.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,10 +22,8 @@
         <a href="research.html">Research</a>
         <a class="active" href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="profile.html">Profile</a>
-        <a href="thoughts.html">Thoughts</a>
         <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -29,8 +33,7 @@
       <div class="container">
         <h1>Project Directory</h1>
         <p>
-          Every project below includes quick access to code, demo, paper, presentation context, and a standalone
-          project page with problem statement, research gap, methodology, results, and qualitative comparison.
+          Each major project includes code/demo/paper links and a standalone project page with problem statement, gap, methodology, key contributions, results, qualitative comparison, and role summary.
         </p>
       </div>
     </section>
@@ -38,82 +41,66 @@
     <section class="section">
       <div class="container card-grid">
         <article class="project-card">
-          <p class="project-kicker">ICPR 2026</p>
+          <p class="project-kicker">IEEE ICPR 2026</p>
           <h2>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h2>
-          <p>
-            Geometry-aware temporal tracking framework combining residual motion modeling, association, and conservative
-            recovery in challenging swarm scenes.
-          </p>
+          <p>Formation-aware UAV swarm tracking with conservative recovery under missing observations and ambiguous motion.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/kraft.html">Details</a>
             <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
             <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
             <a class="action-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#presentations">Presentation</a>
+            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
           <p class="project-kicker">ACM TSAS 2026</p>
           <h2>STARD-Net: SpatioTemporal Attention for Robust Detection of Tiny Airborne Objects</h2>
-          <p>
-            End-to-end detection model integrating spatial feature refinement, temporal modeling, and spatiotemporal
-            attention for moving-drone environments.
-          </p>
+          <p>Spatiotemporal tiny-object detection from moving drones under clutter, camouflage, and partial occlusion.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/stard-net.html">Details</a>
             <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="stardnet-demo/mvaaod_curated/Clip_49.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
             <a class="action-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#presentations">Presentation</a>
+            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
           <p class="project-kicker">IEEE MDM 2025</p>
           <h2>V-USDT: Vision-Based UAV Swarm Detection and Tracking</h2>
-          <p>
-            Vision-based detection and formation-aware swarm tracking designed to improve association continuity under
-            weak appearance and occlusion.
-          </p>
+          <p>Formation-aware vision tracking for swarm continuity under weak appearance and intermittent occlusion.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/v-usdt.html">Details</a>
             <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
             <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
             <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#presentations">Presentation</a>
+            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
           <p class="project-kicker">IEEE AIPR 2023</p>
           <h2>Augmented UAV Detection and Tracking Dataset</h2>
-          <p>
-            A curated and augmented benchmark for UAV-to-UAV detection and tracking research under dynamic real-world
-            conditions.
-          </p>
+          <p>Dataset and benchmarking contribution for UAV-to-UAV detection and tracking in dynamic scenarios.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/aipr-dataset.html">Details</a>
             <a class="action-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="stardnet-demo/nps_curated/Clip_49.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
             <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#presentations">Presentation</a>
+            <a class="action-link" href="publications.html#peer-reviewed-conferences">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
           <p class="project-kicker">Translational Direction</p>
           <h2>Radiogenomic Brain Tumor MRI Classification</h2>
-          <p>
-            Secondary research direction in multimodal biomedical imaging and data-driven decision support.
-            Top 3 Best Poster recognition at Pathways 2026 Symposium (NextGen Precision Health).
-          </p>
+          <p>Secondary biomedical AI direction: MRI-based radiogenomic classification with poster recognition at Pathways 2026.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/radiogenomic.html">Details</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="publications.html#presentations">Demo</a>
-            <a class="action-link" href="publications.html#presentations">Paper</a>
-            <a class="action-link" href="publications.html#presentations">Presentation</a>
+            <a class="action-link" href="assets/radiogenomic_poster.png" target="_blank" rel="noopener noreferrer">Poster</a>
+            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
+            <a class="action-link" href="mailto:mrpk9@mst.edu">Request Materials</a>
           </div>
         </article>
       </div>
@@ -123,7 +110,12 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
-      <p>Last updated: April 29, 2026</p>
+      <div class="footer-links">
+        <a href="teaching.html">Teaching</a>
+        <a href="profile.html">Profile</a>
+        <a href="thoughts.html">Thoughts</a>
+        <a href="postdoc.html">Postdoc Fit</a>
+      </div>
     </div>
   </footer>
 

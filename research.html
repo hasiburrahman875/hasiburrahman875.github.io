@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Md Hasibur Rahman</title>
-  <meta name="description" content="Research direction spanning robust UAV perception and current work on domain-generalized multimodal GeoAI for climate-smart agriculture.">
+  <meta name="description" content="Current research on domain-generalized multimodal GeoAI for climate-smart agriculture, grounded in robust UAV perception and multimodal AI.">
+  <meta name="keywords" content="domain generalization, GeoAI, remote sensing, Sentinel-1, Sentinel-2, UAV tracking, multimodal AI">
+  <meta property="og:title" content="Research | Md Hasibur Rahman">
+  <meta property="og:description" content="Domain-generalized multimodal GeoAI for climate-smart agriculture with robust perception foundations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hasiburrahman875.github.io/research.html">
+  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/profile.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,10 +22,8 @@
         <a class="active" href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="profile.html">Profile</a>
-        <a href="thoughts.html">Thoughts</a>
         <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -30,9 +34,13 @@
         <h1>Current Research</h1>
         <p>
           My current research focuses on <strong>Domain-Generalized Multimodal GeoAI for Climate-Smart Agriculture</strong>,
-          while building on my prior work in robust UAV perception, spatiotemporal modeling, and uncertainty-aware
-          tracking systems.
+          while building on my prior work in robust UAV perception, spatiotemporal modeling, and uncertainty-aware tracking systems.
         </p>
+        <div class="secondary-links">
+          <a href="postdoc.html">Postdoc &amp; Collaboration</a>
+          <a href="projects.html">Project Directory</a>
+          <a href="thoughts.html">Thoughts &amp; Writings</a>
+        </div>
       </div>
     </section>
 
@@ -40,23 +48,17 @@
       <div class="container">
         <h2>Domain-Generalized Multimodal GeoAI for Climate-Smart Agriculture</h2>
         <p>
-          My current research focuses on building trustworthy multimodal geospatial AI systems for climate-smart
-          agriculture and environmental resilience. I am particularly interested in how satellite-based AI models can
-          generalize beyond the regions, years, crop systems, and climate conditions on which they were trained.
+          My current research focuses on building trustworthy multimodal geospatial AI systems for climate-smart agriculture and environmental resilience.
+          I am particularly interested in how satellite-based AI models can generalize beyond the regions, years, crop systems, and climate conditions on which they were trained.
         </p>
         <p>
-          Modern agricultural monitoring increasingly relies on Earth-observation data such as Sentinel-1 SAR,
-          Sentinel-2 optical imagery, weather variables, terrain, and environmental covariates. These data sources
-          provide complementary information about crop growth, vegetation condition, moisture, structure, and climate
-          stress. However, agricultural landscapes are highly dynamic. A model trained in one region or growing season
-          may fail when deployed in another geography, climate zone, year, or sensor condition.
+          Modern agricultural monitoring increasingly relies on Earth-observation data such as Sentinel-1 SAR, Sentinel-2 optical imagery, weather variables, terrain, and environmental covariates.
+          These data sources provide complementary information about crop growth, vegetation condition, moisture, structure, and climate stress.
+          However, agricultural landscapes are highly dynamic, and a model trained in one region or season may fail in another geography, year, or sensor condition.
         </p>
         <p>
-          This creates a fundamental out-of-distribution generalization problem in agricultural GeoAI. Models may
-          achieve high accuracy under random train-test splits, but still learn unstable shortcuts related to
-          geography, crop calendar, soil background, cloud artifacts, sensor conditions, or year-specific weather
-          patterns. My work aims to address this gap by developing models that learn transferable agricultural signals
-          rather than memorizing domain-specific biases.
+          This creates a fundamental out-of-distribution generalization problem in agricultural GeoAI.
+          My work aims to address this gap by developing models that learn transferable agricultural signals rather than memorizing domain-specific shortcuts.
         </p>
       </div>
     </section>
@@ -65,10 +67,9 @@
       <div class="container">
         <h2>Research Problem</h2>
         <div class="callout">
-          How can we build multimodal GeoAI models that reliably monitor crop condition, agricultural stress, and
-          production risk across unseen regions, years, climate regimes, and sensor conditions?
+          How can we build multimodal GeoAI models that reliably monitor crop condition, agricultural stress, and production risk across unseen regions, years, climate regimes, and sensor conditions?
         </div>
-        <p>Key target applications include:</p>
+        <p>Target applications include:</p>
         <ul class="clean-list">
           <li>Crop type mapping</li>
           <li>Early crop stress detection</li>
@@ -85,26 +86,15 @@
       <div class="container">
         <h2>Methodological Direction: AgriShift</h2>
         <p>
-          I am developing a framework tentatively called <strong>AgriShift</strong>, which explores selective domain
-          residualization and reliability-aware multimodal fusion for agricultural remote sensing.
+          I am developing a framework tentatively called <strong>AgriShift</strong>, exploring selective domain residualization and reliability-aware multimodal fusion for agricultural remote sensing.
         </p>
-        <p>The core idea is to separate agricultural representations into three components:</p>
         <ol class="publication-list">
           <li><strong>Stable crop and land structure:</strong> persistent field, crop, terrain, and land-cover characteristics.</li>
-          <li><strong>Domain nuisance information:</strong> unstable factors such as region-specific appearance, year-specific weather patterns, sensor artifacts, cloud effects, and label-source bias.</li>
-          <li><strong>Transferable crop or stress evidence:</strong> signals that should remain useful across new geographies, growing seasons, and climate conditions.</li>
+          <li><strong>Domain nuisance information:</strong> region-specific appearance, year-specific weather, sensor artifacts, cloud effects, and label-source bias.</li>
+          <li><strong>Transferable crop or stress evidence:</strong> signals that should remain useful across new geographies and seasons.</li>
         </ol>
         <p>
-          Instead of enforcing complete domain invariance, the goal is to learn selective invariance: suppress unstable
-          nuisance factors while preserving useful environmental context such as phenology, weather, and climate
-          information.
-        </p>
-        <p>
-          The framework also uses reliability-aware fusion to adaptively combine SAR, optical, weather, and static
-          environmental features. Optical imagery captures vegetation spectral response and phenology but is sensitive
-          to clouds and atmospheric effects. SAR provides complementary structure and moisture-related information
-          under cloudy conditions but introduces sensor-specific noise and geometry effects. Weather and environmental
-          variables provide critical climate context but often at coarser spatial resolution.
+          The objective is selective invariance: suppress unstable nuisance factors while preserving useful environmental context such as phenology and climate information.
         </p>
       </div>
     </section>
@@ -113,30 +103,16 @@
       <div class="container">
         <h2>Experimental Focus</h2>
         <p>
-          The first stage of this work investigates agricultural domain generalization using public Earth-observation
-          datasets such as CropHarvest.
+          The first stage investigates agricultural domain generalization on datasets such as CropHarvest using deployment-style splits.
         </p>
-        <p>Initial deployment-style evaluation splits include:</p>
         <ul class="clean-list">
           <li>Leave-country-out generalization</li>
           <li>Leave-region-out generalization</li>
           <li>Leave-year-out generalization</li>
           <li>Leave-climate-zone-out generalization</li>
-          <li>Missing-modality or cloud-corruption stress tests</li>
+          <li>Missing-modality and cloud-corruption stress tests</li>
         </ul>
-        <p>
-          The goal is to compare standard ERM, SAR-only models, optical-only models, naive multimodal fusion, and
-          domain-generalization baselines against AgriShift.
-        </p>
-        <p>Beyond average accuracy, I evaluate:</p>
-        <ul class="clean-list">
-          <li>Worst-domain performance</li>
-          <li>Out-of-distribution performance gap</li>
-          <li>Calibration and uncertainty</li>
-          <li>Domain leakage in learned representations</li>
-          <li>Modality reliability behavior</li>
-          <li>Robustness under missing or degraded sensor inputs</li>
-        </ul>
+        <p>Evaluation emphasizes worst-domain performance, OOD gap, uncertainty, and robustness under degraded inputs.</p>
       </div>
     </section>
 
@@ -144,24 +120,8 @@
       <div class="container">
         <h2>Broader Vision</h2>
         <p>
-          The broader goal of this research is to develop robust, interpretable, and transferable GeoAI models for
-          real-world agricultural and environmental monitoring. Rather than optimizing only for random benchmark
-          splits, I aim to build systems that remain reliable in actual deployment conditions: new regions, future
-          growing seasons, climate extremes, limited labels, and imperfect sensor observations.
-        </p>
-        <p>
-          This direction connects computer vision, remote sensing, domain generalization, multimodal learning, and
-          climate-smart agriculture, with long-term impact for food security, water resilience, and climate adaptation.
-        </p>
-      </div>
-    </section>
-
-    <section class="section alt-surface">
-      <div class="container">
-        <h2>Continuing Foundations from UAV Research</h2>
-        <p>
-          In parallel, I continue work on robust UAV tracking and perception under sparse, noisy, and safety-critical
-          sensing conditions, including spatiotemporal modeling, multimodal fusion, and reliability-aware inference.
+          My long-term goal is robust, interpretable, and transferable GeoAI for real-world agricultural and environmental monitoring.
+          I focus on systems that remain reliable in new regions, future seasons, climate extremes, and imperfect sensing conditions.
         </p>
       </div>
     </section>
@@ -170,7 +130,12 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
-      <p>Last updated: April 29, 2026</p>
+      <div class="footer-links">
+        <a href="teaching.html">Teaching</a>
+        <a href="profile.html">Profile</a>
+        <a href="thoughts.html">Thoughts</a>
+        <a href="postdoc.html">Postdoc Fit</a>
+      </div>
     </div>
   </footer>
 

@@ -5,7 +5,7 @@
 
     var items = window.NEWS_ITEMS || [];
     if (!Array.isArray(items) || items.length === 0) {
-      node.innerHTML = "<li><strong>No news items found:</strong> add entries in <code>js/news-data.js</code>.</li>";
+      node.innerHTML = "<li><strong>Updates:</strong> New items will be added soon.</li>";
       return;
     }
 
@@ -56,6 +56,33 @@
     });
   }
 
+  function buildVideoFallback(video) {
+    var link = video.getAttribute("data-fallback-link");
+    if (!link) return;
+
+    var holder = document.createElement("p");
+    holder.className = "video-fallback";
+    holder.innerHTML =
+      "If this browser cannot play the embedded video, use the direct file link: " +
+      '<a href="' +
+      link +
+      '" target="_blank" rel="noopener noreferrer">open video</a>.';
+
+    video.parentNode.insertAdjacentElement("afterend", holder);
+  }
+
+  function initVideoFallbacks() {
+    var videos = document.querySelectorAll("video[data-fallback-link]");
+    videos.forEach(function (video) {
+      buildVideoFallback(video);
+      video.setAttribute("playsinline", "playsinline");
+      video.setAttribute("preload", "metadata");
+      video.addEventListener("error", function () {
+        video.classList.add("is-broken");
+      });
+    });
+  }
+
   function setFooterYear() {
     var yearNodes = document.querySelectorAll("#year");
     var year = new Date().getFullYear();
@@ -67,6 +94,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     renderNewsFeed();
     initImageFallbacks();
+    initVideoFallbacks();
     setFooterYear();
   });
 })();
