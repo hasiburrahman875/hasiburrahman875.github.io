@@ -33,8 +33,8 @@ It uses plain HTML, CSS, and minimal JavaScript so content stays easy to edit ma
 ├── assets/
 │   └── (images/PDF placeholders + cv.pdf)
 ├── CV_Hasibur_Rahman_postdoc.pdf
-├── KRAfT demo/
-└── STARDnet Demo/
+├── kraft-demo/
+└── stardnet-demo/
 ```
 
 ## Main Content Goals
