@@ -375,14 +375,19 @@ a:hover {
 }
 
 .mini-profile {
-  max-width: 132px;
-  min-height: 132px;
+  max-width: 96px;
+  min-height: 96px;
   border-radius: 12px;
   margin: 0.8rem 0 0.3rem;
 }
 
 .mini-profile img {
   border-radius: 12px;
+}
+
+.inset-avatar {
+  float: right;
+  margin: 0 0 0.7rem 0.9rem;
 }
 
 .image-frame img,
