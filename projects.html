@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Md Hasibur Rahman</title>
-  <meta name="description" content="Research project directory with details, code, demo, paper, and presentation links.">
-  <meta name="keywords" content="UAV tracking projects, STARD-Net, KRAfT, V-USDT, radiogenomic MRI">
+  <meta name="description" content="Research project portfolio covering UAV perception, swarm tracking, multimodal sensing, and extension directions in biomedical AI.">
+  <meta name="keywords" content="STARD-Net, KRAfT, V-USDT, UAV tracking, multimodal AI projects">
   <meta property="og:title" content="Projects | Md Hasibur Rahman">
-  <meta property="og:description" content="Project pages with problem, methodology, results, impact, and research artifacts.">
+  <meta property="og:description" content="Project cards with venue, problem focus, contribution, impact, and links to details, papers, code, and demos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects.html">
-  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/profile.jpg">
+  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_tracking_result.png">
+  <link rel="canonical" href="https://hasiburrahman875.github.io/projects.html">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
         <a href="research.html">Research</a>
         <a class="active" href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
+        <a href="postdoc.html">Postdoc Fit</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -31,75 +33,111 @@
   <main>
     <section class="section page-intro">
       <div class="container">
-        <h1>Project Directory</h1>
+        <h1>Projects</h1>
         <p>
-          Each major project includes code/demo/paper links and a standalone project page with problem statement, gap, methodology, key contributions, results, qualitative comparison, and role summary.
+          Research projects across tiny airborne object detection, UAV swarm tracking, reliability-aware multimodal modeling,
+          and translational extension work in biomedical AI.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container card-grid">
+      <div class="container project-grid">
         <article class="project-card">
-          <p class="project-kicker">IEEE ICPR 2026</p>
-          <h2>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h2>
-          <p>Formation-aware UAV swarm tracking with conservative recovery under missing observations and ambiguous motion.</p>
-          <div class="project-actions">
-            <a class="action-link" href="projects/kraft.html">Details</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="action-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
+          <span class="venue-badge">ACM TSAS 2026</span>
+          <div class="thumb-box">STARD-Net</div>
+          <h3>STARD-Net: SpatioTemporal Attention for Tiny Airborne Object Detection</h3>
+          <p><strong>Problem:</strong> Tiny airborne targets are weak under camera motion, clutter, and camouflage.</p>
+          <p><strong>Contribution:</strong> Spatiotemporal attention with temporal evidence aggregation for weak-target recovery.</p>
+          <p><strong>Impact:</strong> Journal publication in ACM Transactions on Spatial Algorithms and Systems.</p>
+          <div class="tag-row">
+            <span class="tag-pill">Tiny Targets</span>
+            <span class="tag-pill">Temporal Context</span>
+            <span class="tag-pill">UAV Perception</span>
           </div>
-        </article>
-
-        <article class="project-card">
-          <p class="project-kicker">ACM TSAS 2026</p>
-          <h2>STARD-Net: SpatioTemporal Attention for Robust Detection of Tiny Airborne Objects</h2>
-          <p>Spatiotemporal tiny-object detection from moving drones under clutter, camouflage, and partial occlusion.</p>
           <div class="project-actions">
             <a class="action-link" href="projects/stard-net.html">Details</a>
+            <a class="action-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
             <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
             <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="action-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
-          <p class="project-kicker">IEEE MDM 2025</p>
-          <h2>V-USDT: Vision-Based UAV Swarm Detection and Tracking</h2>
-          <p>Formation-aware vision tracking for swarm continuity under weak appearance and intermittent occlusion.</p>
+          <span class="venue-badge">IEEE ICPR 2026 Accepted</span>
+          <div class="thumb-box">KRAfT</div>
+          <h3>KRAfT: Kalman Residual Diffusion with Formation Awareness</h3>
+          <p><strong>Problem:</strong> Swarm identity continuity fails under overlap and missing observations.</p>
+          <p><strong>Contribution:</strong> Formation-aware residual refinement and conservative recovery strategy.</p>
+          <p><strong>Impact:</strong> Accepted in ICPR 2026 with strong HOTA performance across three test subsets.</p>
+          <div class="tag-row">
+            <span class="tag-pill">Swarm Tracking</span>
+            <span class="tag-pill">Formation-Aware</span>
+            <span class="tag-pill">Recovery</span>
+          </div>
+          <div class="project-actions">
+            <a class="action-link" href="projects/kraft.html">Details</a>
+            <a class="action-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+            <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="venue-badge">IEEE MDM 2025</span>
+          <div class="thumb-box">V-USDT</div>
+          <h3>V-USDT: Vision-Based UAV Swarm Detection and Tracking</h3>
+          <p><strong>Problem:</strong> Similar-looking swarm targets create difficult identity ambiguity over time.</p>
+          <p><strong>Contribution:</strong> Formation-constrained temporal association in a unified detection-tracking pipeline.</p>
+          <p><strong>Impact:</strong> Reported improvements in tracking continuity metrics against baseline methods.</p>
+          <div class="tag-row">
+            <span class="tag-pill">Detection + Tracking</span>
+            <span class="tag-pill">Temporal Association</span>
+            <span class="tag-pill">Swarm Geometry</span>
+          </div>
           <div class="project-actions">
             <a class="action-link" href="projects/v-usdt.html">Details</a>
+            <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
             <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
             <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
-          <p class="project-kicker">IEEE AIPR 2023</p>
-          <h2>Augmented UAV Detection and Tracking Dataset</h2>
-          <p>Dataset and benchmarking contribution for UAV-to-UAV detection and tracking in dynamic scenarios.</p>
+          <span class="venue-badge">IEEE AIPR 2023</span>
+          <div class="thumb-box">AUD</div>
+          <h3>Augmented Dataset for UAV Detection and Tracking</h3>
+          <p><strong>Problem:</strong> Public datasets often underrepresent realistic weak-target and motion-heavy conditions.</p>
+          <p><strong>Contribution:</strong> Curated augmented benchmark for reproducible UAV detection/tracking evaluation.</p>
+          <p><strong>Impact:</strong> Widely reusable dataset/pipeline artifact published at AIPR.</p>
+          <div class="tag-row">
+            <span class="tag-pill">Dataset</span>
+            <span class="tag-pill">Benchmark</span>
+            <span class="tag-pill">Reproducibility</span>
+          </div>
           <div class="project-actions">
             <a class="action-link" href="projects/aipr-dataset.html">Details</a>
+            <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
             <a class="action-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code</a>
             <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="publications.html#peer-reviewed-conferences">Presentation</a>
           </div>
         </article>
 
         <article class="project-card">
-          <p class="project-kicker">Translational Direction</p>
-          <h2>Radiogenomic Brain Tumor MRI Classification</h2>
-          <p>Secondary biomedical AI direction: MRI-based radiogenomic classification with poster recognition at Pathways 2026.</p>
+          <span class="venue-badge">Biomedical AI Extension</span>
+          <div class="thumb-box">MRI-Radiogenomics</div>
+          <h3>Radiogenomic Brain Tumor MRI Classification</h3>
+          <p><strong>Problem:</strong> Reliable multimodal MRI interpretation is challenging under clinical heterogeneity.</p>
+          <p><strong>Contribution:</strong> Translational modeling direction connected to reliability-oriented multimodal AI.</p>
+          <p><strong>Impact:</strong> Top 3 Best Poster recognition at Pathways 2026.</p>
+          <div class="tag-row">
+            <span class="tag-pill">MRI</span>
+            <span class="tag-pill">Radiogenomics</span>
+            <span class="tag-pill">Biomedical AI</span>
+          </div>
           <div class="project-actions">
             <a class="action-link" href="projects/radiogenomic.html">Details</a>
             <a class="action-link" href="assets/radiogenomic_poster.png" target="_blank" rel="noopener noreferrer">Poster</a>
-            <a class="action-link" href="publications.html#posters-presentations">Presentation</a>
             <a class="action-link" href="mailto:mrpk9@mst.edu">Request Materials</a>
           </div>
         </article>
@@ -112,9 +150,8 @@
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
       <div class="footer-links">
         <a href="teaching.html">Teaching</a>
-        <a href="profile.html">Profile</a>
-        <a href="thoughts.html">Thoughts</a>
-        <a href="postdoc.html">Postdoc Fit</a>
+        <a href="profile.html">Background</a>
+        <a href="thoughts.html">Research Notes</a>
       </div>
     </div>
   </footer>

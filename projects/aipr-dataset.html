@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Augmented UAV Dataset Project | Md Hasibur Rahman</title>
-  <meta name="description" content="Augmented UAV detection and tracking dataset project (IEEE AIPR 2023).">
-  <meta name="keywords" content="UAV dataset, AIPR 2023, detection and tracking benchmark">
-  <meta property="og:title" content="Augmented UAV Dataset Project | Md Hasibur Rahman">
-  <meta property="og:description" content="Dataset and benchmark contribution for UAV detection/tracking research.">
+  <title>Augmented UAV Dataset | Project Detail</title>
+  <meta name="description" content="AIPR 2023 project detail for augmented UAV detection and tracking dataset.">
+  <meta name="keywords" content="UAV dataset, AIPR 2023, detection tracking benchmark">
+  <meta property="og:title" content="Augmented UAV Dataset | Project Detail">
+  <meta property="og:description" content="Dataset and benchmark contribution for UAV detection and tracking research.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects/aipr-dataset.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_fusion_pipeline.png">
+  <link rel="canonical" href="https://hasiburrahman875.github.io/projects/aipr-dataset.html">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
         <a href="../research.html">Research</a>
         <a class="active" href="../projects.html">Projects</a>
         <a href="../publications.html">Publications</a>
+        <a href="../postdoc.html">Postdoc Fit</a>
         <a href="../cv.html">CV</a>
         <a href="../contact.html">Contact</a>
       </nav>
@@ -31,70 +33,70 @@
   <main>
     <section class="section page-intro">
       <div class="container">
-        <p class="project-kicker">Project Detail</p>
-        <h1>An Augmented Dataset for Vision-based Unmanned Aerial Vehicles Detection and Tracking</h1>
-        <div class="badge-row">
-          <span class="badge">Venue: IEEE AIPR 2023</span>
-          <span class="badge">DOI: 10.1109/AIPR60534.2023.10440657</span>
-          <span class="badge">Type: Dataset + Benchmark</span>
+        <h1>An Augmented Dataset for Vision-Based Unmanned Aerial Vehicles Detection and Tracking</h1>
+        <div class="meta-row">
+          <span class="venue-badge">Venue: IEEE AIPR 2023</span>
+          <span class="venue-badge">Type: Dataset + Benchmark</span>
+          <span class="venue-badge">DOI: 10.1109/AIPR60534.2023.10440657</span>
+          <span class="tag-pill">Dataset Engineering</span>
+          <span class="tag-pill">Reproducible Evaluation</span>
         </div>
-        <div class="project-actions section-tight">
-          <a class="action-link" href="../projects.html">Back to Projects</a>
-          <a class="action-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code/Dataset</a>
-          <a class="action-link" href="../stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo Video</a>
-          <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
-          <a class="action-link" href="../publications.html#peer-reviewed-conferences">Presentation</a>
+        <div class="button-row">
+          <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+          <a class="btn" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="btn" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code / Dataset</a>
+          <a class="btn" href="../stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container two-col">
+      <div class="container split-grid">
         <article class="card">
-          <h2>Problem</h2>
+          <h2>Problem / Why It Matters</h2>
           <p>
-            UAV detection and tracking research needs realistic datasets that include weak targets, clutter, camera motion, and dynamic scene conditions.
+            UAV detection/tracking research needs benchmarks that include realistic weak-target behavior, clutter, and motion variability.
+          </p>
+          <p>
+            Robust evaluation quality depends on challenging and reproducible data conditions, not only model architecture improvements.
           </p>
         </article>
+
         <article class="card">
-          <h2>Why It Matters</h2>
-          <p>
-            Strong benchmarking resources are essential for fair comparison and practical robustness analysis in airborne perception research.
-          </p>
+          <h2>Method / Key Contributions</h2>
+          <ul class="clean-list">
+            <li>Augmented UAV sequence curation for detection and tracking tasks</li>
+            <li>Benchmark design for stress-oriented model comparison</li>
+            <li>Public release pathway for reusable evaluation and replication</li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section class="section alt-surface">
-      <div class="container">
-        <h2>Method</h2>
-        <p class="project-lead">
-          This project curates and augments UAV sequence data to support reproducible evaluation for detection and tracking under realistic stress conditions.
-        </p>
-        <ul class="clean-list">
-          <li>Augmented sequence construction for detection and tracking.</li>
-          <li>Benchmark support for challenging real-world variation.</li>
-          <li>Repository release for reusable experimental workflows.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="container">
         <h2>Results / Impact</h2>
         <p>
-          Published at IEEE AIPR 2023, this dataset contributes a practical evaluation base for weak-target and motion-heavy UAV scenarios.
+          Published at IEEE AIPR 2023, this dataset supports reproducible UAV detection/tracking benchmarking under practical scene complexity.
         </p>
-        <h3>Qualitative Comparison</h3>
         <p class="callout">
-          Compared with smaller and less varied resources, this augmented benchmark introduces stronger variation for robustness-oriented evaluation.
+          Relative to smaller resources, the augmented benchmark provides broader stress conditions for robustness-oriented evaluation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>My Role</h2>
+        <p>
+          I led dataset design, augmentation strategy, benchmark framing, and publication delivery.
         </p>
       </div>
     </section>
 
     <section class="section alt-surface">
       <div class="container">
-        <h2>Demo</h2>
+        <h2>Demo / Media</h2>
         <div class="button-row">
           <a class="btn" href="../stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Open NPS Clip 41</a>
         </div>
@@ -108,10 +110,15 @@
 
     <section class="section">
       <div class="container">
-        <h2>My Role</h2>
-        <p>
-          I led dataset formulation, implementation, evaluation design, and publication for this benchmark contribution.
-        </p>
+        <h2>Related Publication</h2>
+        <article class="publication-card">
+          <h3>An Augmented Dataset for Vision-Based Unmanned Aerial Vehicles Detection and Tracking</h3>
+          <p class="muted">M. H. Rahman, S. Madria • IEEE AIPR 2023</p>
+          <div class="project-actions">
+            <a class="pub-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">DOI</a>
+            <a class="pub-link" href="../publications.html#conference-papers">Publications Page</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -121,9 +128,8 @@
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
       <div class="footer-links">
         <a href="../teaching.html">Teaching</a>
-        <a href="../profile.html">Profile</a>
-        <a href="../thoughts.html">Thoughts</a>
-        <a href="../postdoc.html">Postdoc Fit</a>
+        <a href="../profile.html">Background</a>
+        <a href="../thoughts.html">Research Notes</a>
       </div>
     </div>
   </footer>

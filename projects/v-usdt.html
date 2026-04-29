@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V-USDT Project | Md Hasibur Rahman</title>
-  <meta name="description" content="V-USDT project: vision-based UAV swarm detection and tracking using formation constraints.">
+  <title>V-USDT | Project Detail</title>
+  <meta name="description" content="V-USDT project detail: vision-based UAV swarm detection and tracking with formation constraints.">
   <meta name="keywords" content="V-USDT, UAV swarm tracking, formation constraints, MDM 2025">
-  <meta property="og:title" content="V-USDT Project | Md Hasibur Rahman">
-  <meta property="og:description" content="IEEE MDM 2025 work on formation-aware swarm detection and tracking.">
+  <meta property="og:title" content="V-USDT | Project Detail">
+  <meta property="og:description" content="IEEE MDM 2025 project on formation-aware temporal association for UAV swarm tracking.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects/v-usdt.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_tracking_result.png">
+  <link rel="canonical" href="https://hasiburrahman875.github.io/projects/v-usdt.html">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
         <a href="../research.html">Research</a>
         <a class="active" href="../projects.html">Projects</a>
         <a href="../publications.html">Publications</a>
+        <a href="../postdoc.html">Postdoc Fit</a>
         <a href="../cv.html">CV</a>
         <a href="../contact.html">Contact</a>
       </nav>
@@ -31,85 +33,84 @@
   <main>
     <section class="section page-intro">
       <div class="container">
-        <p class="project-kicker">Project Detail</p>
         <h1>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h1>
-        <div class="badge-row">
-          <span class="badge">Venue: IEEE MDM 2025</span>
-          <span class="badge">DOI: 10.1109/MDM65600.2025.00026</span>
-          <span class="badge">Type: Conference Paper</span>
+        <div class="meta-row">
+          <span class="venue-badge">Venue: IEEE MDM 2025</span>
+          <span class="venue-badge">Type: Conference Paper</span>
+          <span class="venue-badge">DOI: 10.1109/MDM65600.2025.00026</span>
+          <span class="tag-pill">Swarm Tracking</span>
+          <span class="tag-pill">Formation Constraints</span>
         </div>
-        <div class="project-actions section-tight">
-          <a class="action-link" href="../projects.html">Back to Projects</a>
-          <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-          <a class="action-link" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo Video</a>
-          <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
-          <a class="action-link" href="../publications.html#peer-reviewed-conferences">Presentation</a>
+        <div class="button-row">
+          <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+          <a class="btn" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="btn" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container two-col">
+      <div class="container split-grid">
         <article class="card">
-          <h2>Problem</h2>
+          <h2>Problem / Why It Matters</h2>
           <p>
-            UAV swarm tracking requires reliable identity association when targets are small, visually similar, and frequently occluded.
+            UAV swarm targets often look similar and are frequently occluded, making long-term identity association unstable.
+          </p>
+          <p>
+            Reliable temporal association improves downstream swarm-state understanding and coordinated autonomy behavior.
           </p>
         </article>
+
         <article class="card">
-          <h2>Why It Matters</h2>
-          <p>
-            Continuity failures in swarm tracking propagate to unreliable trajectory analysis and weak downstream autonomy decisions.
-          </p>
+          <h2>Method / Key Contributions</h2>
+          <ul class="clean-list">
+            <li>Formation-aware temporal association for identity consistency</li>
+            <li>Detection-tracking integration tuned for small airborne targets</li>
+            <li>Swarm geometry constraints for ambiguity reduction in overlap conditions</li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section class="section alt-surface">
-      <div class="container">
-        <h2>Method</h2>
-        <p class="project-lead">
-          V-USDT combines robust UAV detection with formation-aware association constraints to improve temporal consistency under weak and ambiguous observations.
-        </p>
-        <h3>Key Technical Contributions</h3>
-        <ul class="clean-list">
-          <li>Detection component tailored for small airborne targets.</li>
-          <li>Formation-aware constraints during multi-object association.</li>
-          <li>Integrated detection-tracking pipeline for swarm-level scenarios.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="container">
         <h2>Results / Impact</h2>
         <div class="metric-grid">
           <article class="metric-card">
-            <p class="metric-label">MOTA</p>
-            <p class="metric-value">87.1 to 90.4</p>
+            <p class="metric-label">MOTA (reported baseline -> method)</p>
+            <p class="metric-value">87.1 -> 90.4</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">IDF1</p>
-            <p class="metric-value">91.1 to 93.1</p>
+            <p class="metric-label">IDF1 (reported baseline -> method)</p>
+            <p class="metric-value">91.1 -> 93.1</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">Misses</p>
-            <p class="metric-value">78.24 to 63.29</p>
+            <p class="metric-label">Misses (reported baseline -> method)</p>
+            <p class="metric-value">78.24 -> 63.29</p>
           </article>
         </div>
         <p>
-          Results are reported against baseline swarm tracking approaches without explicit formation-aware association.
+          Reported values indicate baseline-to-method improvement trends under the evaluation setup described in the paper.
         </p>
-        <h3>Qualitative Comparison</h3>
         <p class="callout">
-          V-USDT maintains stronger trajectory continuity during overlap and weak-target intervals than non-formation baselines.
+          Qualitative comparison shows improved trajectory continuity during overlap and weak-observation intervals.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>My Role</h2>
+        <p>
+          I led task framing, method integration, experimental design, analysis, and manuscript writing for this work.
         </p>
       </div>
     </section>
 
     <section class="section alt-surface">
       <div class="container">
-        <h2>Demo</h2>
+        <h2>Demo / Media</h2>
         <div class="button-row">
           <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Open Demo Clip</a>
         </div>
@@ -123,10 +124,15 @@
 
     <section class="section">
       <div class="container">
-        <h2>My Role</h2>
-        <p>
-          I led problem framing, model integration, experiments, and paper writing for this conference publication.
-        </p>
+        <h2>Related Publication</h2>
+        <article class="publication-card">
+          <h3>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h3>
+          <p class="muted">M. H. Rahman, S. Madria • IEEE MDM 2025</p>
+          <div class="project-actions">
+            <a class="pub-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">DOI</a>
+            <a class="pub-link" href="../publications.html#selected-publications">Publications Page</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -136,9 +142,8 @@
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
       <div class="footer-links">
         <a href="../teaching.html">Teaching</a>
-        <a href="../profile.html">Profile</a>
-        <a href="../thoughts.html">Thoughts</a>
-        <a href="../postdoc.html">Postdoc Fit</a>
+        <a href="../profile.html">Background</a>
+        <a href="../thoughts.html">Research Notes</a>
       </div>
     </div>
   </footer>
