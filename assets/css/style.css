@@ -276,6 +276,18 @@ main {
   text-align: center;
 }
 
+.highlight-thumb-image {
+  overflow: hidden;
+  padding: 6px;
+}
+
+.highlight-thumb-image img {
+  display: block;
+  width: 100%;
+  max-height: 112px;
+  object-fit: contain;
+}
+
 .pub-list,
 .publication-list,
 .project-list {
