@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Md Hasibur Rahman</title>
-  <meta name="description" content="Selected research projects in UAV perception, swarm tracking, multimodal AI, GeoAI, and biomedical AI.">
-  <meta name="keywords" content="STARD-Net, KRAfT, V-USDT, UAV tracking, multimodal AI projects">
+  <meta name="description" content="Compact directory of research projects in UAV-based perception, spatiotemporal tracking, GeoAI, and biomedical AI.">
+  <meta name="keywords" content="STARD-Net, KRAfT, V-USDT, UAV tracking, GeoAI, biomedical AI">
   <meta property="og:title" content="Projects | Md Hasibur Rahman">
-  <meta property="og:description" content="Professional project cards with research problem, contribution, impact, and validated links.">
+  <meta property="og:description" content="Structured project directory linking to dedicated academic project pages.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_tracking_result.png">
@@ -33,108 +33,91 @@
     <section class="section page-intro">
       <div class="container">
         <h1>Projects</h1>
-        <p>Selected research projects in UAV perception, swarm tracking, multimodal AI, GeoAI, and biomedical AI.</p>
+        <p>
+          Dedicated project pages for computer vision, machine learning, multimodal AI, and applied AI engineering work.
+          The main application domain is UAV-based airborne object detection and tracking, with extension directions in GeoAI and biomedical AI.
+        </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container project-grid">
-        <article class="project-card">
-          <span class="venue-badge">ACM TSAS 2026</span>
-          <div class="thumb-box">STARD-Net</div>
-          <h3>STARD-Net</h3>
-          <p><strong>Problem:</strong> Tiny airborne targets are weak under moving-camera motion, clutter, camouflage, and occlusion.</p>
-          <p><strong>Contribution:</strong> Spatiotemporal attention and temporal evidence aggregation for weak-target recovery.</p>
-          <p><strong>Impact:</strong> Published in ACM Transactions on Spatial Algorithms and Systems, 2026.</p>
-          <div class="tag-row">
-            <span class="tag-pill">Tiny Targets</span>
-            <span class="tag-pill">Temporal Context</span>
-            <span class="tag-pill">UAV Perception</span>
-          </div>
-          <div class="project-actions">
-            <a class="action-link" href="projects/stard-net.html">Details</a>
-            <a class="action-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+      <div class="container project-directory">
+        <article class="project-group">
+          <h2>Computer Vision and UAV-Based Perception</h2>
+          <div class="project-list">
+            <article class="project-entry">
+              <h3>STARD-Net</h3>
+              <p>Spatiotemporal attention for tiny airborne object detection from moving UAV cameras.</p>
+              <p class="muted">ACM Transactions on Spatial Algorithms and Systems, 2026.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/stard-net.html">Details</a>
+                <a class="pub-link" href="https://doi.org/10.1145/3787467" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pub-link" href="https://www.youtube-nocookie.com/embed/OK8Z7LnXpGk" target="_blank" rel="noopener noreferrer">Video</a>
+              </div>
+            </article>
+
+            <article class="project-entry">
+              <h3>Augmented UAV Dataset</h3>
+              <p>Dataset and augmentation contribution for UAV-based visual detection and tracking.</p>
+              <p class="muted">IEEE AIPR 2023.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/aipr-dataset.html">Details</a>
+                <a class="pub-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pub-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Dataset / Code</a>
+              </div>
+            </article>
           </div>
         </article>
 
-        <article class="project-card">
-          <span class="venue-badge">IEEE ICPR 2026 Accepted</span>
-          <div class="thumb-box">KRAfT</div>
-          <h3>KRAfT</h3>
-          <p><strong>Problem:</strong> Swarm identity continuity fails under overlap, missing observations, and ambiguous formation motion.</p>
-          <p><strong>Contribution:</strong> Formation-aware residual refinement with conservative missing-target recovery.</p>
-          <p><strong>Impact:</strong> Accepted at IEEE ICPR 2026 with HOTA reported across three test subsets.</p>
-          <div class="tag-row">
-            <span class="tag-pill">Swarm Tracking</span>
-            <span class="tag-pill">Formation-Aware</span>
-            <span class="tag-pill">Recovery</span>
-          </div>
-          <div class="project-actions">
-            <a class="action-link" href="projects/kraft.html">Details</a>
-            <a class="action-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
+        <article class="project-group">
+          <h2>Spatiotemporal Tracking</h2>
+          <div class="project-list">
+            <article class="project-entry">
+              <h3>KRAfT</h3>
+              <p>Kalman residual-aware formation tracking for UAV swarms under missing observations and ambiguous associations.</p>
+              <p class="muted">IEEE ICPR 2026, accepted.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/kraft.html">Details</a>
+                <a class="pub-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pub-link" href="https://www.youtube-nocookie.com/embed/Zzs3eCTme9g" target="_blank" rel="noopener noreferrer">Video</a>
+              </div>
+            </article>
+
+            <article class="project-entry">
+              <h3>V-USDT</h3>
+              <p>Vision-based UAV swarm detection and tracking using formation constraints and temporal consistency.</p>
+              <p class="muted">IEEE MDM 2025.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/v-usdt.html">Details</a>
+                <a class="pub-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a class="pub-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Video</a>
+              </div>
+            </article>
           </div>
         </article>
 
-        <article class="project-card">
-          <span class="venue-badge">IEEE MDM 2025</span>
-          <div class="thumb-box">V-USDT</div>
-          <h3>V-USDT</h3>
-          <p><strong>Problem:</strong> Similar-looking swarm targets create identity ambiguity over time.</p>
-          <p><strong>Contribution:</strong> Formation-constrained temporal association in a unified detection-tracking pipeline.</p>
-          <p><strong>Impact:</strong> Reported improvements in tracking continuity metrics against baseline methods.</p>
-          <div class="tag-row">
-            <span class="tag-pill">Detection + Tracking</span>
-            <span class="tag-pill">Temporal Association</span>
-            <span class="tag-pill">Swarm Geometry</span>
-          </div>
-          <div class="project-actions">
-            <a class="action-link" href="projects/v-usdt.html">Details</a>
-            <a class="action-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-          </div>
-        </article>
+        <article class="project-group">
+          <h2>Multimodal AI Extensions</h2>
+          <div class="project-list">
+            <article class="project-entry">
+              <h3>Radiogenomic MRI Classification</h3>
+              <p>MRI-based biomedical AI extension focused on radiogenomic classification and reliable multimodal learning.</p>
+              <p class="muted">Poster Recognition / Biomedical AI Extension.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/radiogenomic.html">Details</a>
+                <a class="pub-link" href="assets/radiogenomic_poster.png" target="_blank" rel="noopener noreferrer">Poster</a>
+              </div>
+            </article>
 
-        <article class="project-card">
-          <span class="venue-badge">IEEE AIPR 2023</span>
-          <div class="thumb-box">AUD</div>
-          <h3>Augmented UAV Dataset</h3>
-          <p><strong>Problem:</strong> Public datasets often underrepresent realistic weak-target and motion-heavy conditions.</p>
-          <p><strong>Contribution:</strong> Curated augmented benchmark for reproducible UAV detection/tracking evaluation.</p>
-          <p><strong>Impact:</strong> Dataset and benchmark contribution published at IEEE AIPR 2023.</p>
-          <div class="tag-row">
-            <span class="tag-pill">Dataset</span>
-            <span class="tag-pill">Benchmark</span>
-            <span class="tag-pill">Reproducibility</span>
-          </div>
-          <div class="project-actions">
-            <a class="action-link" href="projects/aipr-dataset.html">Details</a>
-            <a class="action-link" href="https://doi.org/10.1109/AIPR60534.2023.10440657" target="_blank" rel="noopener noreferrer">Paper</a>
-            <a class="action-link" href="https://github.com/hasiburrahman875/aud" target="_blank" rel="noopener noreferrer">Code</a>
-            <a class="action-link" href="stardnet-demo/nps_curated/Clip_41.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <span class="venue-badge">Biomedical AI Extension</span>
-          <div class="thumb-box">MRI</div>
-          <h3>Radiogenomic MRI Classification</h3>
-          <p><strong>Problem:</strong> Reliable multimodal MRI interpretation is challenging under clinical heterogeneity.</p>
-          <p><strong>Contribution:</strong> Translational modeling direction connected to reliability-oriented multimodal AI.</p>
-          <p><strong>Impact:</strong> Top 3 Best Poster recognition at Pathways 2026.</p>
-          <div class="tag-row">
-            <span class="tag-pill">MRI</span>
-            <span class="tag-pill">Radiogenomics</span>
-            <span class="tag-pill">Biomedical AI</span>
-          </div>
-          <div class="project-actions">
-            <a class="action-link" href="projects/radiogenomic.html">Details</a>
-            <a class="action-link" href="assets/radiogenomic_poster.png" target="_blank" rel="noopener noreferrer">Poster</a>
-            <a class="action-link" href="mailto:mrpk9@mst.edu">Request Materials</a>
+            <article class="project-entry">
+              <h3>Domain-Generalized GeoAI</h3>
+              <p>Emerging remote-sensing project direction for SAR-optical-weather learning under geographic, temporal, climate, and sensor shift.</p>
+              <p class="muted">Research direction / emerging project.</p>
+              <div class="inline-links">
+                <a class="pub-link" href="projects/geoai.html">Details</a>
+                <a class="pub-link" href="research.html">Research Context</a>
+              </div>
+            </article>
           </div>
         </article>
       </div>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KRAfT | Project Detail</title>
-  <meta name="description" content="KRAfT project detail: formation-aware UAV swarm tracking with Kalman residual refinement.">
-  <meta name="keywords" content="KRAfT, UAV swarm tracking, formation-aware tracking, ICPR 2026">
-  <meta property="og:title" content="KRAfT | Project Detail">
-  <meta property="og:description" content="ICPR 2026 accepted work on conservative swarm tracking recovery under missing observations.">
+  <title>KRAfT | Md Hasibur Rahman</title>
+  <meta name="description" content="KRAfT project page for formation-aware UAV swarm tracking with Kalman residual refinement.">
+  <meta name="keywords" content="KRAfT, computer vision, UAV swarm tracking, multi-object tracking, spatiotemporal modeling">
+  <meta property="og:title" content="KRAfT | Md Hasibur Rahman">
+  <meta property="og:description" content="IEEE ICPR 2026 accepted project on UAV swarm tracking under missing observations and ambiguous associations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects/kraft.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_tracking_result.png">
@@ -29,136 +29,154 @@
     </div>
   </header>
 
-  <main>
-    <section class="section page-intro">
-      <div class="container">
-        <h1>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h1>
-        <div class="meta-row">
-          <span class="venue-badge">Venue: IEEE ICPR 2026</span>
-          <span class="venue-badge">Status: Accepted</span>
-          <span class="venue-badge">Domain: UAV Swarm Tracking</span>
-          <span class="tag-pill">Formation-Aware</span>
-          <span class="tag-pill">Missing Observation Recovery</span>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
-          <a class="btn" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Paper</a>
-          <a class="btn" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
+  <main class="project-page">
+    <section class="container project-hero">
+      <p class="project-kicker">KRAfT</p>
+      <h1 class="project-title">KRAfT: Kalman Residual-Aware Formation Tracking for UAV Swarms</h1>
+      <p class="project-summary">
+        KRAfT focuses on UAV swarm tracking under missing observations, noisy detections, and ambiguous associations.
+        It combines formation-aware reasoning with Kalman residual refinement and conservative recovery to improve trajectory continuity.
+      </p>
+      <div class="project-meta">
+        <span>Area: Computer Vision · Multi-Object Tracking · Spatiotemporal Modeling</span>
+        <span>Venue/status: IEEE ICPR 2026, accepted</span>
+        <span>Year: 2026</span>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Accepted List</a>
+        <a class="btn" href="../publications.html#selected-publications">Publication</a>
+        <a class="btn" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+        <a class="btn" href="https://www.youtube-nocookie.com/embed/Zzs3eCTme9g" target="_blank" rel="noopener noreferrer">Video</a>
+      </div>
+      <div class="project-tags">
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Multi-Object Tracking</span>
+        <span class="tag">Formation-Aware Reasoning</span>
+        <span class="tag">Spatiotemporal Modeling</span>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container card-grid">
-        <article class="card">
-          <h2>Problem</h2>
-          <p>
-            Swarm tracking performance can collapse when targets overlap, disappear temporarily, or produce ambiguous motion cues.
-          </p>
-        </article>
+    <div class="container project-layout">
+      <section class="project-section">
+        <h2>Problem Statement</h2>
+        <p>
+          Tracking multiple UAVs is challenging when targets are small, visually similar, and intermittently missing due to occlusion, detector failure, or motion blur.
+        </p>
+      </section>
 
-        <article class="card">
-          <h2>Why It Matters</h2>
-          <p>
-            Reliable identity continuity is essential for swarm behavior analysis and downstream autonomous decision logic.
-          </p>
-        </article>
+      <section class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Pure detection-by-tracking systems can break trajectories when observations are missing or ambiguous. KRAfT improves temporal association by using motion consistency and formation-level cues.
+        </p>
+      </section>
 
-        <article class="card">
-          <h2>Method</h2>
-          <p>
-            KRAfT combines Kalman residual refinement with formation-aware constraints and conservative recovery for missing observations.
-          </p>
-        </article>
+      <section class="project-section">
+        <h2>Methodology Overview</h2>
+        <p>
+          The tracking pipeline uses detections as input, predicts motion with Kalman filtering, refines updates with residual-aware reasoning, and uses formation-aware association to preserve track continuity under ambiguity.
+        </p>
+        <ul class="clean-list">
+          <li>Detection input for candidate UAV locations.</li>
+          <li>Kalman prediction for motion-consistent temporal updates.</li>
+          <li>Residual-aware refinement to reduce drift and unstable recovery.</li>
+          <li>Formation-aware association for swarm-level consistency.</li>
+          <li>Conservative recovery when observations are missing or ambiguous.</li>
+        </ul>
+        <figure class="method-figure">
+          <img src="../assets/uav_tracking_result.png" alt="KRAfT tracking visualization">
+          <figcaption class="figure-caption">KRAfT tracking visualization for formation-aware UAV swarm tracking.</figcaption>
+        </figure>
+      </section>
 
-        <article class="card">
-          <h2>Key Contributions</h2>
-          <ul class="clean-list">
-            <li>Formation-aware UAV swarm tracking</li>
-            <li>Kalman residual refinement for motion-consistent recovery</li>
-            <li>Conservative recovery strategy to reduce false associations during missing observations</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section class="project-section">
+        <h2>Key Contributions</h2>
+        <ul class="clean-list">
+          <li>Formation-aware temporal association for UAV swarm tracking.</li>
+          <li>Kalman residual refinement for motion-consistent trajectory updates.</li>
+          <li>Conservative recovery strategy for missing observations.</li>
+          <li>Robust tracking design for visually small and ambiguous aerial targets.</li>
+        </ul>
+      </section>
 
-    <section class="section alt-surface">
-      <div class="container">
-        <h2>Results / Impact</h2>
+      <section class="project-section">
+        <h2>Experimental Setup</h2>
+        <table class="result-table">
+          <tbody>
+            <tr>
+              <th>Input modality</th>
+              <td>Vision-based UAV swarm detections / video-derived observations.</td>
+            </tr>
+            <tr>
+              <th>Task</th>
+              <td>Multi-object UAV swarm tracking with missing-observation recovery.</td>
+            </tr>
+            <tr>
+              <th>Metrics</th>
+              <td>HOTA scores are reported across three evaluation subsets/settings in the current project summary.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="project-section">
+        <h2>Quantitative Results</h2>
         <div class="metric-grid">
           <article class="metric-card">
-            <p class="metric-label">HOTA (Subset 1)</p>
+            <p class="metric-label">Reported HOTA</p>
             <p class="metric-value">80.37</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">HOTA (Subset 2)</p>
+            <p class="metric-label">Reported HOTA</p>
             <p class="metric-value">70.59</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">HOTA (Subset 3)</p>
+            <p class="metric-label">Reported HOTA</p>
             <p class="metric-value">65.31</p>
           </article>
         </div>
-        <p>
-          Accepted at IEEE ICPR 2026. Reported results indicate strong tracking robustness across three benchmark subsets.
-        </p>
-        <p class="callout">
-          Qualitative comparisons show more stable formation consistency and safer missing-target recovery relative to diffusion-only tracking baselines.
-        </p>
-      </div>
-    </section>
+        <p class="muted">Scores are shown as reported across three evaluation subsets/settings; exact subset names are not restated here.</p>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>My Role</h2>
-        <p>
-          I led method design, implementation, benchmark analysis, demo generation, and paper preparation.
-        </p>
-      </div>
-    </section>
+      <!-- Future qualitative examples can be added here. -->
 
-    <section class="section alt-surface">
-      <div class="container">
+      <section class="project-section">
         <h2>Demo / Media</h2>
-        <div class="button-row">
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Open Clip 04</a>
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-06_strict_win.mp4" target="_blank" rel="noopener noreferrer">Open Clip 06</a>
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Open Clip 46</a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/Zzs3eCTme9g" title="KRAfT demo video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="media-grid">
-          <div class="video-frame">
-            <video controls data-fallback-link="../kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4">
-              <source src="../kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="video-frame">
-            <video controls data-fallback-link="../kraft-demo/kraft_vs_diffmot_UAVSwarm-06_strict_win.mp4">
-              <source src="../kraft-demo/kraft_vs_diffmot_UAVSwarm-06_strict_win.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="video-frame">
-            <video controls data-fallback-link="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4">
-              <source src="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="inline-links section-tight">
+          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-04_strict_win.mp4" target="_blank" rel="noopener noreferrer">Direct Clip 04</a>
+          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-06_strict_win.mp4" target="_blank" rel="noopener noreferrer">Direct Clip 06</a>
+          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Direct Clip 46</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
+      <section class="project-section">
+        <h2>My Role</h2>
+        <p class="project-role">
+          My contributions include method design, tracking pipeline implementation, experiments, result analysis, visualization, and manuscript preparation.
+        </p>
+      </section>
+
+      <section class="project-section">
         <h2>Related Publication</h2>
-        <article class="publication-card">
-          <h3>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h3>
-          <p class="muted">M. H. Rahman, S. Madria • IEEE ICPR 2026 (accepted)</p>
-          <div class="project-actions">
-            <a class="pub-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Accepted List</a>
-            <a class="pub-link" href="../publications.html#selected-publications">Publications Page</a>
-          </div>
-        </article>
-      </div>
-    </section>
+        <p>
+          M. H. Rahman and S. Madria, "KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking," <strong>IEEE ICPR</strong>, accepted, 2026.
+        </p>
+        <div class="inline-links">
+          <a class="pub-link" href="https://icpr2026.org/acceptedPapers.html" target="_blank" rel="noopener noreferrer">Accepted List</a>
+          <a class="pub-link" href="../publications.html#selected-publications">Publications Page</a>
+        </div>
+        <!-- Add BibTeX when final citation is available. -->
+      </section>
+
+      <nav class="project-nav" aria-label="Project navigation">
+        <a class="btn" href="stard-net.html">Previous: STARD-Net</a>
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn" href="v-usdt.html">Next: V-USDT</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="site-footer">

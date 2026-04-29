@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V-USDT | Project Detail</title>
-  <meta name="description" content="V-USDT project detail: vision-based UAV swarm detection and tracking with formation constraints.">
-  <meta name="keywords" content="V-USDT, UAV swarm tracking, formation constraints, MDM 2025">
-  <meta property="og:title" content="V-USDT | Project Detail">
-  <meta property="og:description" content="IEEE MDM 2025 project on formation-aware temporal association for UAV swarm tracking.">
+  <title>V-USDT | Md Hasibur Rahman</title>
+  <meta name="description" content="V-USDT project page for vision-based UAV swarm detection and tracking using formation constraints.">
+  <meta name="keywords" content="V-USDT, computer vision, UAV swarm detection, UAV tracking, formation constraints">
+  <meta property="og:title" content="V-USDT | Md Hasibur Rahman">
+  <meta property="og:description" content="IEEE MDM 2025 project on vision-based UAV swarm detection and tracking with formation-aware reasoning.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/projects/v-usdt.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_tracking_result.png">
@@ -29,122 +29,153 @@
     </div>
   </header>
 
-  <main>
-    <section class="section page-intro">
-      <div class="container">
-        <h1>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h1>
-        <div class="meta-row">
-          <span class="venue-badge">Venue: IEEE MDM 2025</span>
-          <span class="venue-badge">Type: Conference Paper</span>
-          <span class="venue-badge">DOI: 10.1109/MDM65600.2025.00026</span>
-          <span class="tag-pill">Swarm Tracking</span>
-          <span class="tag-pill">Formation Constraints</span>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
-          <a class="btn" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper</a>
-          <a class="btn" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
+  <main class="project-page">
+    <section class="container project-hero">
+      <p class="project-kicker">V-USDT</p>
+      <h1 class="project-title">V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h1>
+      <p class="project-summary">
+        V-USDT addresses vision-based UAV swarm detection and tracking using formation-aware reasoning and temporal consistency.
+        The project focuses on computer vision and machine learning for small aerial targets in cluttered, interactive swarm settings.
+      </p>
+      <div class="project-meta">
+        <span>Area: Computer Vision · UAV Swarm Detection and Tracking · Formation Constraints</span>
+        <span>Venue: IEEE MDM 2025</span>
+        <span>DOI: 10.1109/MDM65600.2025.00026</span>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">Paper / DOI</a>
+        <a class="btn" href="../publications.html#selected-publications">Publication</a>
+        <a class="btn" href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">Code</a>
+        <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Video</a>
+      </div>
+      <div class="project-tags">
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Detection and Tracking</span>
+        <span class="tag">Temporal Consistency</span>
+        <span class="tag">Formation Constraints</span>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container card-grid">
-        <article class="card">
-          <h2>Problem</h2>
-          <p>
-            UAV swarm targets often look similar and are frequently occluded, making long-term identity association unstable.
-          </p>
-        </article>
+    <div class="container project-layout">
+      <section class="project-section">
+        <h2>Problem Statement</h2>
+        <p>
+          UAV swarms create detection and association challenges due to small object scale, similar appearance, clutter, and frequent interaction between targets.
+        </p>
+      </section>
 
-        <article class="card">
-          <h2>Why It Matters</h2>
-          <p>
-            Reliable temporal association improves downstream swarm-state understanding and coordinated autonomy behavior.
-          </p>
-        </article>
+      <section class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Tracking quality depends not only on frame-level detections but also on maintaining identity and trajectory consistency over time. Formation-aware reasoning provides structure that helps reduce ambiguity when individual visual evidence is weak.
+        </p>
+      </section>
 
-        <article class="card">
-          <h2>Method</h2>
-          <p>
-            V-USDT integrates vision-based detection with swarm formation constraints to reduce identity ambiguity across time.
-          </p>
-        </article>
+      <section class="project-section">
+        <h2>Methodology Overview</h2>
+        <p>
+          V-USDT integrates vision-based detection with temporal association and swarm formation constraints. The method is designed for small airborne targets where visually similar objects can overlap or interact over time.
+        </p>
+        <ul class="clean-list">
+          <li>Vision-based UAV swarm detection and tracking.</li>
+          <li>Formation-aware reasoning for multi-target perception.</li>
+          <li>Temporal consistency for robust swarm-level tracking.</li>
+        </ul>
+        <!-- Add V-USDT method overview figure here. -->
+      </section>
 
-        <article class="card">
-          <h2>Key Contributions</h2>
-          <ul class="clean-list">
-            <li>Formation-aware temporal association for identity consistency</li>
-            <li>Detection-tracking integration tuned for small airborne targets</li>
-            <li>Swarm geometry constraints for ambiguity reduction in overlap conditions</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section class="project-section">
+        <h2>Key Contributions</h2>
+        <ul class="clean-list">
+          <li>Vision-based UAV swarm detection and tracking.</li>
+          <li>Formation-aware reasoning for multi-target perception.</li>
+          <li>Temporal consistency for robust swarm-level tracking.</li>
+        </ul>
+      </section>
 
-    <section class="section alt-surface">
-      <div class="container">
-        <h2>Results / Impact</h2>
+      <section class="project-section">
+        <h2>Experimental Setup</h2>
+        <table class="result-table">
+          <tbody>
+            <tr>
+              <th>Input modality</th>
+              <td>Vision-based UAV swarm video / image observations.</td>
+            </tr>
+            <tr>
+              <th>Task</th>
+              <td>Detection and tracking of UAV swarms with formation-aware temporal association.</td>
+            </tr>
+            <tr>
+              <th>Metrics shown</th>
+              <td>MOTA, IDF1, and Misses values are reported from the current project content.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="project-section">
+        <h2>Quantitative Results</h2>
         <div class="metric-grid">
           <article class="metric-card">
-            <p class="metric-label">MOTA (reported baseline -> method)</p>
+            <p class="metric-label">MOTA baseline -> method</p>
             <p class="metric-value">87.1 -> 90.4</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">IDF1 (reported baseline -> method)</p>
+            <p class="metric-label">IDF1 baseline -> method</p>
             <p class="metric-value">91.1 -> 93.1</p>
           </article>
           <article class="metric-card">
-            <p class="metric-label">Misses (reported baseline -> method)</p>
+            <p class="metric-label">Misses baseline -> method</p>
             <p class="metric-value">78.24 -> 63.29</p>
           </article>
         </div>
-        <p>
-          Reported values indicate baseline-to-method improvement trends under the evaluation setup described in the paper.
-        </p>
-        <p class="callout">
-          Qualitative comparison shows improved trajectory continuity during overlap and weak-observation intervals.
-        </p>
-      </div>
-    </section>
+        <p class="muted">Values are conservatively shown as reported baseline-to-method comparisons from the existing project page.</p>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>My Role</h2>
-        <p>
-          I led task framing, method integration, experimental design, analysis, and manuscript writing for this work.
-        </p>
-      </div>
-    </section>
-
-    <section class="section alt-surface">
-      <div class="container">
-        <h2>Demo / Media</h2>
-        <div class="button-row">
-          <a class="btn" href="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" target="_blank" rel="noopener noreferrer">Open Demo Clip</a>
+      <section class="project-section">
+        <h2>Qualitative Results</h2>
+        <div class="qual-grid">
+          <figure class="qual-item">
+            <img src="../assets/uav_tracking_result.png" alt="UAV swarm tracking qualitative result">
+            <figcaption class="figure-caption">UAV swarm tracking visualization from the available site assets.</figcaption>
+          </figure>
         </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Demo / Media</h2>
         <div class="video-frame">
           <video controls data-fallback-link="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4">
             <source src="../kraft-demo/kraft_vs_diffmot_UAVSwarm-46_strict_win.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
+      <section class="project-section">
+        <h2>My Role</h2>
+        <p class="project-role">
+          My contributions include task framing, method integration, experimental design, analysis, and manuscript writing.
+        </p>
+      </section>
+
+      <section class="project-section">
         <h2>Related Publication</h2>
-        <article class="publication-card">
-          <h3>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h3>
-          <p class="muted">M. H. Rahman, S. Madria • IEEE MDM 2025</p>
-          <div class="project-actions">
-            <a class="pub-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">DOI</a>
-            <a class="pub-link" href="../publications.html#selected-publications">Publications Page</a>
-          </div>
-        </article>
-      </div>
-    </section>
+        <p>
+          M. H. Rahman and S. Madria, "V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints," <strong>26th IEEE International Conference on Mobile Data Management (MDM)</strong>, 55-61, 2025.
+        </p>
+        <div class="inline-links">
+          <a class="pub-link" href="https://doi.org/10.1109/MDM65600.2025.00026" target="_blank" rel="noopener noreferrer">DOI</a>
+          <a class="pub-link" href="../publications.html#selected-publications">Publications Page</a>
+        </div>
+        <!-- Add BibTeX when final citation is available. -->
+      </section>
+
+      <nav class="project-nav" aria-label="Project navigation">
+        <a class="btn" href="kraft.html">Previous: KRAfT</a>
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn" href="aipr-dataset.html">Next: Augmented UAV Dataset</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="site-footer">

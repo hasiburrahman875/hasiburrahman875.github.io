@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain-Generalized GeoAI | Md Hasibur Rahman</title>
+  <meta name="description" content="Emerging GeoAI project direction on domain-generalized multimodal remote sensing for climate-smart agriculture.">
+  <meta name="keywords" content="GeoAI, remote sensing, Sentinel-1, Sentinel-2, domain generalization, climate-smart agriculture">
+  <meta property="og:title" content="Domain-Generalized GeoAI | Md Hasibur Rahman">
+  <meta property="og:description" content="Research direction on SAR-optical-weather fusion and domain generalization for agricultural monitoring.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hasiburrahman875.github.io/projects/geoai.html">
+  <meta property="og:image" content="https://hasiburrahman875.github.io/assets/uav_fusion_pipeline.png">
+  <link rel="canonical" href="https://hasiburrahman875.github.io/projects/geoai.html">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-title" href="../index.html">Md Hasibur Rahman</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a class="active" href="../projects.html">Projects</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../cv.html">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <section class="container project-hero">
+      <p class="project-kicker">Domain-Generalized GeoAI</p>
+      <h1 class="project-title">Domain-Generalized Multimodal GeoAI for Climate-Smart Agriculture</h1>
+      <p class="project-summary">
+        This emerging research direction extends my reliability-focused computer vision and multimodal learning work toward remote sensing and agricultural monitoring under domain shift.
+        The goal is to study models that remain useful across unseen regions, years, climate regimes, and sensor conditions.
+      </p>
+      <div class="project-meta">
+        <span>Area: GeoAI · Remote Sensing · Multimodal Learning · Domain Generalization</span>
+        <span>Status: Emerging research direction</span>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="../research.html">Research Context</a>
+        <a class="btn" href="../contact.html">Discuss Collaboration</a>
+      </div>
+      <div class="project-tags">
+        <span class="tag">GeoAI</span>
+        <span class="tag">Remote Sensing</span>
+        <span class="tag">Domain Generalization</span>
+        <span class="tag">Multimodal Learning</span>
+      </div>
+    </section>
+
+    <div class="container project-layout">
+      <section class="project-section">
+        <h2>Problem Statement</h2>
+        <p>
+          Agricultural remote-sensing models may perform well under random train-test splits but fail when deployed in new geographies, seasons, crop calendars, climate regimes, or sensor conditions.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Climate-smart agricultural monitoring needs models that generalize beyond the data distribution on which they were trained. This is important for crop mapping, stress monitoring, drought/flood impact assessment, irrigation analysis, and food-security decision support.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Methodology Plan</h2>
+        <p>
+          The research plan explores selective domain residualization and reliability-aware SAR-optical-weather fusion. The emphasis is on learning transferable crop and stress evidence while reducing dependence on unstable domain-specific shortcuts.
+        </p>
+        <ul class="clean-list">
+          <li>Model stable crop and land structure separately from nuisance domain information.</li>
+          <li>Use reliability-aware fusion across remote-sensing and environmental modalities.</li>
+          <li>Evaluate performance under realistic geographic, temporal, climate, and sensor shifts.</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Target Data Modalities</h2>
+        <table class="result-table">
+          <tbody>
+            <tr>
+              <th>SAR</th>
+              <td>Sentinel-1 SAR for structure and moisture-related information.</td>
+            </tr>
+            <tr>
+              <th>Optical</th>
+              <td>Sentinel-2 optical imagery for vegetation response and phenology.</td>
+            </tr>
+            <tr>
+              <th>Context</th>
+              <td>Weather data and environmental covariates for climate and terrain context.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="project-section">
+        <h2>Evaluation Plan</h2>
+        <ul class="clean-list">
+          <li>Leave-region-out generalization.</li>
+          <li>Leave-year-out generalization.</li>
+          <li>Leave-climate-zone-out generalization.</li>
+          <li>Missing-modality and degraded-sensor stress tests.</li>
+          <li>Calibration, uncertainty, and worst-domain behavior analysis.</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Current Status</h2>
+        <p class="project-callout">
+          This page presents an active research direction rather than a completed peer-reviewed project. Results, datasets, tables, and code links will be added only after they are ready to share.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Future Work</h2>
+        <p>
+          Future work includes implementing the evaluation protocol, comparing domain-generalization baselines, analyzing modality reliability, and developing interpretable indicators of geographic and temporal transfer.
+        </p>
+        <!-- Add quantitative tables, figures, and BibTeX after results are available. -->
+      </section>
+
+      <nav class="project-nav" aria-label="Project navigation">
+        <a class="btn" href="radiogenomic.html">Previous: Radiogenomic MRI</a>
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Md Hasibur Rahman</p>
+      <div class="footer-links">
+        <a href="mailto:mrpk9@mst.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/md-hasibur-rahman-b9071a108/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="../teaching.html">Teaching</a>
+        <a href="../profile.html">Profile</a>
+        <a href="../thoughts.html">Thoughts</a>
+        <a href="../postdoc.html">Postdoc Fit</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
