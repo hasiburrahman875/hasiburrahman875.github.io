@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Md Hasibur Rahman</title>
-  <meta name="description" content="Research themes spanning robust UAV perception, tiny airborne object detection, swarm tracking, reliable multimodal AI, GeoAI, and biomedical AI.">
-  <meta name="keywords" content="UAV perception, swarm tracking, tiny object detection, multimodal AI, reliable AI, GeoAI, biomedical imaging">
+  <meta name="description" content="Research profile for Md Hasibur Rahman in computer vision, machine learning, multimodal AI, UAV-based visual perception, GeoAI, and biomedical AI.">
+  <meta name="keywords" content="computer vision, machine learning, multimodal AI, UAV-based perception, small-object detection, tracking, GeoAI, biomedical AI">
   <meta property="og:title" content="Research | Md Hasibur Rahman">
-  <meta property="og:description" content="Robust computer vision and multimodal AI research for dynamic and uncertain environments.">
+  <meta property="og:description" content="Research in computer vision, machine learning, and multimodal AI for robust perception in dynamic and uncertain environments.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/research.html">
   <meta property="og:image" content="https://hasiburrahman875.github.io/assets/profile.jpg">
@@ -20,9 +20,10 @@
       <a class="site-title" href="index.html">Md Hasibur Rahman</a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a class="active" href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -30,133 +31,88 @@
   </header>
 
   <main>
-    <section class="section page-intro">
+    <section class="section">
       <div class="container">
-        <h1>Research</h1>
-        <p>
-          My research centers on robust computer vision and multimodal AI for dynamic, uncertain environments. My dissertation work focuses on UAV perception, tiny airborne object detection, UAV swarm tracking, and spatiotemporal reasoning under clutter, motion, occlusion, missing observations, and sensor uncertainty. I also extend these reliability-driven ideas to GeoAI and biomedical AI, where models must generalize across domains, sensors, environments, and deployment conditions.
+        <h1 class="page-title">Research</h1>
+        <p class="lead">
+          My research centers on computer vision, machine learning, and multimodal AI for robust perception in dynamic and uncertain environments. My dissertation work focuses on tiny airborne object detection, UAV-based visual perception, multi-object tracking, and spatiotemporal reasoning under clutter, motion, occlusion, missing observations, and sensor uncertainty. I am also extending these reliability-driven ideas to GeoAI and biomedical AI, where models must generalize across domains, sensors, environments, and deployment conditions.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split-grid">
-        <article class="card">
-          <h2>Core Area I: UAV Perception and Tiny Airborne Object Detection</h2>
-          <p>
-            My core dissertation work studies perception from a moving drone camera, where tiny airborne targets often provide only weak visual evidence.
-          </p>
-          <ul class="clean-list">
-            <li>Moving drone camera perception under scene motion and platform motion</li>
-            <li>Tiny airborne targets with low contrast and limited spatial evidence</li>
-            <li>Clutter, camouflage, occlusion, and faint target recovery</li>
-            <li>Spatiotemporal attention for sequence-level evidence aggregation</li>
-          </ul>
-          <p class="muted"><strong>Representative work:</strong> STARD-Net, ACM TSAS 2026.</p>
-        </article>
-
-        <article class="card">
-          <h2>Core Area II: UAV Swarm Tracking and Temporal Association</h2>
-          <p>
-            I develop tracking methods for multi-object UAV settings where identities become ambiguous under overlap, missing detections, and coordinated motion.
-          </p>
-          <ul class="clean-list">
-            <li>Multi-object UAV tracking with visually similar airborne targets</li>
-            <li>Formation-aware association and trajectory continuity</li>
-            <li>Missing-observation recovery with conservative update strategies</li>
-            <li>Motion consistency for stable temporal reasoning</li>
-          </ul>
-          <p class="muted"><strong>Representative work:</strong> KRAfT, IEEE ICPR 2026 accepted; V-USDT, IEEE MDM 2025.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section alt-surface">
       <div class="container">
-        <article class="surface-card">
-          <h2>Methodological Theme: Reliable Multimodal and Spatiotemporal AI</h2>
-          <p>
-            Across these projects, I am interested in methods that remain useful when the inputs are degraded, partial, noisy, or temporally inconsistent.
-          </p>
-          <div class="card-grid">
-            <article class="card">
-              <h3>Uncertainty-Aware Inference</h3>
-              <p>Model behavior should communicate reliability, not only predictions, especially under weak evidence and distribution shift.</p>
-            </article>
-            <article class="card">
-              <h3>Degraded Inputs and Missing Observations</h3>
-              <p>Real systems need stable behavior when observations disappear, sensors degrade, or measurements arrive sparsely.</p>
-            </article>
-            <article class="card">
-              <h3>Deployment-Oriented Evaluation</h3>
-              <p>I emphasize OOD/stress testing, sensor fusion reliability, calibration, and failure-mode analysis beyond clean benchmark splits.</p>
-            </article>
-          </div>
-        </article>
+        <h2>Computer Vision for Tiny Airborne Object Detection</h2>
+        <p>
+          I study small-object perception from moving UAV cameras, where targets are visually weak and often affected by clutter, camouflage, motion, and partial occlusion.
+        </p>
+        <p class="muted">Representative work: <a href="projects/stard-net.html">STARD-Net</a>, ACM TSAS 2026.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split-grid">
-        <article class="card">
-          <h2>Extension Direction: GeoAI and Remote Sensing Generalization</h2>
-          <p>
-            I am extending reliability-driven multimodal learning to domain-generalized GeoAI for climate-smart agriculture.
-          </p>
-          <ul class="clean-list">
-            <li>Sentinel-1 SAR, Sentinel-2 optical imagery, weather data, and environmental covariates</li>
-            <li>Leave-region, leave-year, and leave-climate-zone generalization</li>
-            <li>Reliability-aware SAR-optical-weather fusion under cloud, sensor, and domain shift</li>
-            <li>Applications in crop mapping, crop stress monitoring, yield-risk estimation, and food-security decision support</li>
-          </ul>
-          <div class="inline-links">
-            <a class="pub-link" href="projects/geoai.html">GeoAI Project Direction</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h2>Extension Direction: Biomedical AI and Radiogenomics</h2>
-          <p>
-            My biomedical AI direction explores reliable multimodal learning for MRI-based radiogenomic classification and clinically relevant model behavior. This connects my broader interest in robust representation learning, multimodal fusion, and trustworthy decision support.
-          </p>
-          <ul class="clean-list">
-            <li>MRI-based radiogenomic brain tumor classification</li>
-            <li>Reliability and generalization under heterogeneous clinical data</li>
-            <li>Translational model behavior rather than benchmark-only optimization</li>
-          </ul>
-        </article>
+      <div class="container">
+        <h2>Spatiotemporal Tracking and Multi-Object Association</h2>
+        <p>
+          My tracking work focuses on temporal association, trajectory continuity, missing-observation recovery, and formation-aware reasoning for small, visually similar airborne targets.
+        </p>
+        <p class="muted">Representative work: <a href="projects/kraft.html">KRAfT</a>, IEEE ICPR 2026 accepted; <a href="projects/v-usdt.html">V-USDT</a>, IEEE MDM 2025.</p>
       </div>
     </section>
 
-    <section class="section alt-surface">
+    <section class="section">
+      <div class="container">
+        <h2>Multimodal Learning and Reliable AI</h2>
+        <p>
+          I am interested in models that remain useful when visual and multimodal inputs are noisy, partial, degraded, or shifted from training conditions.
+        </p>
+        <ul>
+          <li>Uncertainty-aware inference and reliability analysis.</li>
+          <li>Stress testing under missing observations and degraded inputs.</li>
+          <li>Evaluation beyond clean random benchmark splits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Applied AI Engineering</h2>
+        <p>
+          My work includes reproducible AI/ML pipelines for data preparation, model training, evaluation, visualization, and analysis. I value systems that are testable, interpretable, and clear enough for other researchers to build on.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>GeoAI and Remote Sensing Generalization</h2>
+        <p>
+          I am extending robust multimodal learning toward remote sensing, with interest in Sentinel-1 SAR, Sentinel-2 optical imagery, weather data, and environmental covariates for climate-smart agriculture.
+        </p>
+        <p class="muted">Emerging project direction: <a href="projects/geoai.html">Domain-Generalized GeoAI</a>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Biomedical AI and Radiogenomics</h2>
+        <p>
+          My biomedical AI direction explores MRI-based radiogenomic classification and clinically meaningful model behavior as an extension of robust visual and multimodal representation learning.
+        </p>
+        <p class="muted">Related project: <a href="projects/radiogenomic.html">Radiogenomic MRI Classification</a>.</p>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container">
         <h2>Current Research Agenda</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Robust UAV Perception Under Weak Signals</h3>
-            <p>Tiny airborne object detection when visual evidence is faint, cluttered, or temporarily occluded.</p>
-          </article>
-          <article class="card">
-            <h3>Formation-Aware UAV Swarm Tracking</h3>
-            <p>Swarm association and recovery methods that preserve identity continuity under missing observations.</p>
-          </article>
-          <article class="card">
-            <h3>Uncertainty-Aware Multimodal Fusion</h3>
-            <p>Fusion strategies that adapt to modality reliability and degraded sensor inputs.</p>
-          </article>
-          <article class="card">
-            <h3>Domain-Generalized GeoAI</h3>
-            <p>SAR-optical-weather learning for crop and climate monitoring across unseen regions, years, and climate zones.</p>
-          </article>
-          <article class="card">
-            <h3>Reliable Biomedical Imaging and Radiogenomic AI</h3>
-            <p>MRI-based multimodal AI with attention to robustness, uncertainty, and translational relevance.</p>
-          </article>
-          <article class="card">
-            <h3>Foundation/VLM-Assisted Weak-Target Perception</h3>
-            <p>Exploring whether foundation models can support weak-signal perception without compromising reliability.</p>
-          </article>
-        </div>
+        <ul>
+          <li>Robust UAV-based airborne object detection under weak visual evidence.</li>
+          <li>Formation-aware multi-object tracking and missing-observation recovery.</li>
+          <li>Reliable multimodal learning under uncertainty and domain shift.</li>
+          <li>Domain-generalized GeoAI for agricultural and environmental monitoring.</li>
+          <li>Reliable biomedical imaging and radiogenomic AI.</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -165,11 +121,6 @@
     <div class="container footer-row">
       <p>© <span id="year"></span> Md Hasibur Rahman</p>
       <div class="footer-links">
-        <a href="mailto:mrpk9@mst.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/md-hasibur-rahman-b9071a108/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="teaching.html">Teaching</a>
         <a href="profile.html">Profile</a>
         <a href="thoughts.html">Thoughts</a>
         <a href="postdoc.html">Postdoc Fit</a>
