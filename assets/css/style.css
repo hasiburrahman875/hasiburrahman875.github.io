@@ -154,6 +154,37 @@ main {
   margin-bottom: 0;
 }
 
+.intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 132px;
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-inset {
+  justify-self: end;
+  width: 132px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 8px;
+  text-align: center;
+}
+
+.profile-inset img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.profile-inset p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
 .page-intro {
   margin-bottom: 34px;
 }
@@ -555,6 +586,7 @@ main {
 
   .two-column,
   .research-list,
+  .intro-layout,
   .highlight-item,
   .split-grid,
   .card-grid,
@@ -566,5 +598,10 @@ main {
 
   main {
     padding-top: 28px;
+  }
+
+  .profile-inset {
+    justify-self: start;
+    width: 112px;
   }
 }
