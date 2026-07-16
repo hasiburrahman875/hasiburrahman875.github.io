@@ -20,7 +20,7 @@ window.NEWS_ITEMS = [
     link: "https://doi.org/10.1109/AIPR60534.2023.10440657"
   },
   {
-    date: "Fall 2026 (expected)",
+    date: "August 2026 (expected)",
     text: "Expected PhD completion in Computer Science at Missouri University of Science and Technology."
   }
 ];
