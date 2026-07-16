@@ -60,8 +60,8 @@ main { min-height: 70vh; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr); gap: 42px; align-items: start; }
 .hero-grid > * { min-width: 0; }
 .identity-panel { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 22px; align-items: start; }
-.hero-profile-frame { width: 150px; height: 220px; overflow: hidden; border: 1px solid var(--rule); }
-.hero-profile-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; transform: scale(1.35); transform-origin: 50% 25%; }
+.hero-profile-frame { width: 150px; height: 150px; border: 1px solid var(--rule); }
+.hero-profile-image { display: block; width: 100%; height: 100%; object-fit: contain; }
 .eyebrow, .section-label {
   margin-bottom: 0.65rem;
   color: var(--accent);
@@ -221,7 +221,7 @@ main { min-height: 70vh; }
   .site-nav a { white-space: nowrap; }
   .hero-grid, .content-grid, .news-section .content-grid { grid-template-columns: 1fr; gap: 24px; }
   .identity-panel { grid-template-columns: 120px minmax(0, 1fr); gap: 18px; }
-  .hero-profile-frame { width: 120px; height: 176px; }
+  .hero-profile-frame { width: 120px; height: 120px; }
   .identity-panel h1 { font-size: 2.1rem; }
   .hero h1, .hero-statement p { overflow-wrap: anywhere; }
   .hero { padding: 36px 0 34px; }
