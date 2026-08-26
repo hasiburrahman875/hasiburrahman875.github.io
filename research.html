@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Md Hasibur Rahman</title>
-  <meta name="description" content="Research by Md Hasibur Rahman in multimodal and biomedical AI, reliable perception, small-object detection, multi-object tracking, and heterogeneous sensing.">
+  <meta name="description" content="Research by Md Hasibur Rahman in reliable perception, multimodal sensing, spatiotemporal machine learning, and biomedical AI.">
   <meta property="og:title" content="Research | Md Hasibur Rahman">
-  <meta property="og:description" content="Four research works in multimodal and biomedical AI, reliable perception, tracking, and heterogeneous sensing.">
+  <meta property="og:description" content="Reliable perception, multimodal sensing, spatiotemporal learning, and biomedical AI.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hasiburrahman875.github.io/research.html">
   <link rel="canonical" href="https://hasiburrahman875.github.io/research.html">
@@ -16,32 +16,43 @@
   <header class="site-header"><div class="container nav-wrap">
     <a class="site-title" href="index.html">Md Hasibur Rahman</a>
     <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a class="active" aria-current="page" href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="cv.html">CV</a>
-      </nav>
+      <a href="index.html">Home</a>
+      <a class="active" aria-current="page" href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
   </div></header>
 
   <main>
     <header class="page-header research-header"><div class="container">
       <p class="eyebrow">Research</p>
-      <h1 class="page-title">Multimodal intelligence for perception and health</h1>
-      <p class="lead">I develop learning systems that combine visual, temporal, spatial, and biomedical evidence, with an emphasis on reliability when observations are sparse, noisy, or incomplete.</p>
+      <h1 class="page-title">Reliable learning from incomplete multimodal observations</h1>
+      <p class="lead">My research asks how learning systems can make reliable decisions when observations are small, sparse, noisy, asynchronous, or missing. I study this problem through computer vision, spatiotemporal modeling, multimodal sensing, and emerging biomedical applications.</p>
     </div></header>
 
     <section class="content-section section-tinted"><div class="container content-grid">
-      <h2>Biomedical AI direction</h2>
-      <div class="content-copy research-direction">
-        <p>My planned biomedical AI research will examine practical systems that interpret multimodal health data in real-world settings. I am particularly interested in combining imaging, behavioral, and sensor-derived evidence to characterize clinically meaningful variation, support personalized assessment, and remain dependable across patients, devices, and acquisition conditions. The goal is to develop models whose evidence can be validated, interpreted, and translated into useful decision support.</p>
-        <p class="research-note">This direction builds on my prior work in <a href="projects/radiogenomic.html">radiogenomic imaging</a> and <a href="https://arxiv.org/abs/2507.18570">genomic language modeling</a>.</p>
+      <h2>Research agenda</h2>
+      <div class="content-copy">
+        <div class="research-block">
+          <h3>Reliable perception</h3>
+          <p>Detection and tracking of small or weakly observed objects under occlusion, camera motion, missed detections, and uncertain dynamics.</p>
+        </div>
+        <div class="research-block">
+          <h3>Multimodal sensing</h3>
+          <p>Fusion of heterogeneous evidence across sensors and time, with explicit attention to disagreement, missing measurements, and reliability.</p>
+        </div>
+        <div class="research-block">
+          <h3>Biomedical and wearable AI</h3>
+          <p>Personalized and multimodal modeling of physiological, behavioral, imaging, and wearable-sensing data, with emphasis on interpretable and clinically meaningful variation.</p>
+        </div>
       </div>
     </div></section>
 
     <section class="research-work-section"><div class="container">
       <div class="research-section-heading">
-        <h2>Selected research</h2>
+        <p class="section-label">Representative work</p>
+        <h2>Methods and systems</h2>
       </div>
 
       <div class="research-feature-list">
@@ -53,8 +64,8 @@
           <div class="research-feature-copy">
             <p class="research-feature-kicker">Computer vision · Detection</p>
             <h3>STARD-Net</h3>
-            <p class="research-feature-abstract"><span>Abstract.</span> Detecting small airborne objects from a moving UAV is difficult because targets occupy few pixels and are easily confused with clutter, camera motion, camouflage, or partial occlusion. STARD-Net addresses this setting with a spatiotemporal architecture that refines weak visual evidence using attention, residual and dilated feature extraction, and temporal context. The work focuses on preserving target evidence across frames rather than treating each image independently, providing a structured approach to reliable small-object detection in dynamic aerial scenes.</p>
-            <div class="research-feature-links"><a href="projects/stard-net.html">Project details</a><a href="https://doi.org/10.1145/3787467">Paper</a><a href="https://github.com/hasiburrahman875/STARDNet">Code</a></div>
+            <p class="research-feature-abstract">A spatiotemporal architecture for detecting tiny airborne objects from moving drones, designed to preserve weak target evidence across frames under clutter, motion, and partial occlusion.</p>
+            <div class="research-feature-links"><a href="projects/stard-net.html">Project</a><a href="https://doi.org/10.1145/3787467">Paper</a><a href="https://github.com/hasiburrahman875/STARDNet">Code</a></div>
           </div>
         </article>
 
@@ -66,21 +77,21 @@
           <div class="research-feature-copy">
             <p class="research-feature-kicker">Computer vision · Tracking</p>
             <h3>KRAfT</h3>
-            <p class="research-feature-abstract"><span>Abstract.</span> Multi-UAV tracking becomes fragile when detections are missing, motion estimates are noisy, and nearby objects create ambiguous associations. KRAfT introduces formation-aware reasoning to preserve identity through these failures. It combines motion prediction with Kalman-residual refinement and conservative recovery, using relationships among neighboring tracks as additional evidence when a single trajectory is uncertain. The resulting framework is designed for coordinated aerial motion, where group geometry can constrain association without replacing object-level dynamics.</p>
-            <div class="research-feature-links"><a href="projects/kraft.html">Project details</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
+            <p class="research-feature-abstract">A formation-aware tracking framework that uses residual motion refinement and neighboring-track structure to preserve identity through missed detections and ambiguous associations.</p>
+            <div class="research-feature-links"><a href="projects/kraft.html">Project</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
           </div>
         </article>
 
         <article class="research-feature">
           <figure class="research-feature-media">
             <img src="assets/multimodal_uav-methodology.png" alt="MultiLiDAR UAV sensing methodology with heterogeneous sensor streams" loading="lazy">
-            <figcaption>MultiLiDAR sensing: aligning sparse, asynchronous evidence over time.</figcaption>
+            <figcaption>Multi-LiDAR sensing: aligning sparse, asynchronous evidence over time.</figcaption>
           </figure>
           <div class="research-feature-copy">
             <p class="research-feature-kicker">Multimodal AI · Sensor fusion</p>
-            <h3>MultiLiDAR UAV Sensing</h3>
-            <p class="research-feature-abstract"><span>Abstract.</span> Heterogeneous LiDAR systems produce sparse point clouds with different sampling patterns, timing, range, and reliability. This ongoing research studies how temporal accumulation, candidate formation, and reliability-aware fusion can transform those asynchronous measurements into coherent UAV tracks. The central question is how to preserve useful evidence without allowing stale or low-confidence observations to dominate. The work provides a testbed for multimodal learning under sensor disagreement and missing data; quantitative evaluation is in progress.</p>
-            <div class="research-feature-links"><a href="projects/multilidar-uav-sensing.html">Project details</a></div>
+            <h3>Multi-LiDAR UAV sensing</h3>
+            <p class="research-feature-abstract">Reliability-aware fusion of sparse, heterogeneous LiDAR streams for UAV localization and tracking under asynchronous sampling and sensor disagreement.</p>
+            <div class="research-feature-links"><a href="projects/multilidar-uav-sensing.html">Project</a></div>
           </div>
         </article>
 
@@ -91,14 +102,14 @@
           </figure>
           <div class="research-feature-copy">
             <p class="research-feature-kicker">Biomedical AI · Medical imaging</p>
-            <h3>Radiogenomic MRI Classification</h3>
-            <p class="research-feature-abstract"><span>Abstract.</span> This work investigates whether complementary brain MRI sequences can support non-invasive prediction of tumor molecular status. The approach treats each sequence as a distinct source of anatomical evidence and studies their integration under limited, heterogeneous clinical data. Beyond classification, the project motivates a broader biomedical AI agenda: models should remain robust to acquisition variation, expose the evidence behind a decision, and be evaluated for clinical relevance rather than benchmark performance alone. The work was presented as a student research poster and is not claimed as a peer-reviewed publication.</p>
-            <div class="research-feature-links"><a href="projects/radiogenomic.html">Project details</a><a href="https://github.com/hasiburrahman875/RSNA_MGMT_Classification">Code</a></div>
+            <h3>Radiogenomic MRI classification</h3>
+            <p class="research-feature-abstract">An exploration of complementary MRI sequences for non-invasive tumor molecular-status prediction, motivating broader work on robust and interpretable multimodal biomedical learning.</p>
+            <div class="research-feature-links"><a href="projects/radiogenomic.html">Project</a><a href="https://github.com/hasiburrahman875/RSNA_MGMT_Classification">Code</a></div>
           </div>
         </article>
       </div>
 
-      <p class="research-more">Related work in genomic AI, remote sensing, and applied machine learning is listed on the <a href="projects.html">projects page</a>.</p>
+      <p class="research-more">Additional work in genomic AI, remote sensing, and applied machine learning is listed on the <a href="projects.html">projects page</a>.</p>
     </div></section>
   </main>
 
