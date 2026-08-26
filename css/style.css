@@ -1,1 +1,42 @@
 @import url("../assets/css/style.css");
+
+/* Homepage portrait balance */
+.hero {
+  padding: 24px 0 22px;
+}
+
+.hero-compact {
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-profile-frame {
+  width: 140px;
+  height: 140px;
+  border-radius: 6px;
+}
+
+.hero-profile-image {
+  object-position: center 35%;
+}
+
+.hero-summary {
+  max-width: 710px;
+}
+
+@media (max-width: 760px) {
+  .hero-compact {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .hero-profile-frame {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero {
+    padding: 17px 0 16px;
+  }
+}
