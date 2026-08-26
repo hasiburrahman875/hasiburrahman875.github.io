@@ -49,39 +49,71 @@
       </div>
     </section>
 
-    <section class="section section-tinted">
-      <div class="container home-overview">
-        <div class="home-panel">
-          <h2>Research Focus</h2>
-          <ul class="compact-list">
-            <li><strong>Reliable perception</strong><p>Small-object detection and tracking under missed observations, occlusion, motion uncertainty, and clutter.</p></li>
-            <li><strong>Multimodal sensing</strong><p>Fusion of visual, temporal, spatial, and heterogeneous sensor evidence under missing or conflicting observations.</p></li>
-            <li><strong>Biomedical AI</strong><p>Personalized and multimodal learning from physiological, behavioral, imaging, and wearable-sensing data.</p></li>
-          </ul>
-          <p class="section-link"><a href="research.html">Research overview →</a></p>
+    <section class="home-section section-tinted" aria-labelledby="focus-heading">
+      <div class="container">
+        <div class="home-section-head">
+          <h2 id="focus-heading">Research Focus</h2>
+          <a href="research.html">Research overview →</a>
         </div>
+        <div class="focus-cards">
+          <article class="focus-card">
+            <h3>Reliable perception</h3>
+            <p>Small-object detection and tracking under missed observations, occlusion, motion uncertainty, and clutter.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Multimodal sensing</h3>
+            <p>Fusion of visual, temporal, spatial, and heterogeneous sensor evidence under missing or conflicting observations.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Biomedical AI</h3>
+            <p>Personalized and multimodal learning from physiological, behavioral, imaging, and wearable-sensing data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div class="home-panel">
-          <h2>Selected Work</h2>
-          <ul class="compact-list">
-            <li>
-              <strong>STARD-Net</strong> <span class="compact-work-meta">· ACM TSAS, 2026</span>
-              <p>Tiny airborne-object detection from moving drones using spatiotemporal attention. <span class="compact-work-links"><a href="https://doi.org/10.1145/3787467">Paper</a> · <a href="projects/stard-net.html">Project</a></span></p>
-            </li>
-            <li>
-              <strong>KRAfT</strong> <span class="compact-work-meta">· IEEE ICPR, 2026</span>
-              <p>Formation-aware UAV swarm tracking with residual motion refinement and conservative recovery. <span class="compact-work-links"><a href="https://doi.org/10.1007/978-3-032-31654-7_2">Paper</a> · <a href="projects/kraft.html">Project</a> · <a href="https://github.com/hasiburrahman875/KRAfT">Code</a></span></p>
-            </li>
-            <li>
-              <strong>TARF</strong> <span class="compact-work-meta">· ACM SIGSPATIAL, 2026</span>
-              <p>Track-aware reliability fusion for 3D drone tracking with sparse multi-LiDAR point clouds. <span class="compact-work-links"><a href="https://sigspatial2026.sigspatial.org/research-accepted/">Listing</a> · <a href="https://github.com/hasiburrahman875/tarf_mmuav">Code</a></span></p>
-            </li>
-            <li>
-              <strong>V-USDT</strong> <span class="compact-work-meta">· IEEE MDM, 2025</span>
-              <p>Vision-based UAV swarm detection and tracking using formation constraints. <span class="compact-work-links"><a href="https://doi.org/10.1109/MDM65600.2025.00026">Paper</a> · <a href="projects/v-usdt.html">Project</a></span></p>
-            </li>
-          </ul>
-          <p class="section-link"><a href="publications.html">All publications →</a></p>
+    <section class="home-section" aria-labelledby="selected-heading">
+      <div class="container">
+        <div class="home-section-head">
+          <h2 id="selected-heading">Selected Work</h2>
+          <a href="publications.html">All publications →</a>
+        </div>
+        <div class="selected-grid">
+          <article class="selected-card">
+            <div class="selected-card-head">
+              <h3>STARD-Net</h3>
+              <span>ACM TSAS · 2026</span>
+            </div>
+            <p>Tiny airborne-object detection from moving drones using spatiotemporal attention.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1145/3787467">Paper</a><a href="projects/stard-net.html">Project</a></div>
+          </article>
+
+          <article class="selected-card">
+            <div class="selected-card-head">
+              <h3>KRAfT</h3>
+              <span>IEEE ICPR · 2026</span>
+            </div>
+            <p>Formation-aware UAV swarm tracking with residual motion refinement and conservative recovery.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1007/978-3-032-31654-7_2">Paper</a><a href="projects/kraft.html">Project</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
+          </article>
+
+          <article class="selected-card">
+            <div class="selected-card-head">
+              <h3>TARF</h3>
+              <span>ACM SIGSPATIAL · 2026</span>
+            </div>
+            <p>Track-aware reliability fusion for 3D drone tracking with sparse multi-LiDAR point clouds.</p>
+            <div class="selected-links"><a href="https://sigspatial2026.sigspatial.org/research-accepted/">Listing</a><a href="https://github.com/hasiburrahman875/tarf_mmuav">Code</a></div>
+          </article>
+
+          <article class="selected-card">
+            <div class="selected-card-head">
+              <h3>V-USDT</h3>
+              <span>IEEE MDM · 2025</span>
+            </div>
+            <p>Vision-based UAV swarm detection and tracking using formation constraints.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1109/MDM65600.2025.00026">Paper</a><a href="projects/v-usdt.html">Project</a></div>
+          </article>
         </div>
       </div>
     </section>
