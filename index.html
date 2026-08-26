@@ -19,6 +19,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a class="active" aria-current="page" href="index.html">Home</a>
         <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
       </nav>
@@ -32,9 +33,11 @@
           <img class="hero-profile-image" src="assets/md-hasibur-rahman.webp" width="1254" height="1254" alt="Portrait of Md Hasibur Rahman" fetchpriority="high">
         </div>
         <div class="hero-content">
+          <p class="eyebrow">Multimodal Sensing · Spatiotemporal Machine Learning</p>
           <h1>Md Hasibur Rahman, Ph.D.</h1>
           <p class="hero-role">Ph.D. in Computer Science · Missouri University of Science and Technology</p>
-          <p class="hero-summary">I work on multimodal sensing and spatiotemporal machine learning, with research spanning computer vision, multi-object tracking, sensor fusion, and biomedical AI.</p>
+          <p class="research-line"><strong>Research:</strong> computer vision, multi-object tracking, multimodal sensing, reliable AI, and biomedical AI.</p>
+          <p class="hero-summary">I develop learning methods for dynamic systems that must reason from incomplete, noisy, and heterogeneous observations, with emphasis on reliable spatiotemporal inference.</p>
           <div class="link-row" aria-label="Profile links">
             <a href="mailto:hasiburrahman875@gmail.com">Email</a>
             <a href="CV_Hasibur_Rahman_postdoc.pdf">CV</a>
@@ -46,28 +49,70 @@
       </div>
     </section>
 
+    <section class="home-section section-tinted" aria-labelledby="focus-heading">
+      <div class="container">
+        <div class="home-section-head">
+          <h2 id="focus-heading">Research Focus</h2>
+          <a href="research.html">Research overview →</a>
+        </div>
+        <div class="focus-cards">
+          <article class="focus-card">
+            <h3>Reliable perception</h3>
+            <p>Small-object detection and tracking under missed observations, occlusion, motion uncertainty, and clutter.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Multimodal sensing</h3>
+            <p>Fusion of visual, temporal, spatial, and heterogeneous sensor evidence under missing or conflicting observations.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Biomedical AI</h3>
+            <p>Personalized and multimodal learning from physiological, behavioral, imaging, and wearable-sensing data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="home-section" aria-labelledby="selected-heading">
       <div class="container">
         <div class="home-section-head">
-          <h2 id="selected-heading">Selected Publications</h2>
+          <h2 id="selected-heading">Selected Work</h2>
           <a href="publications.html">All publications →</a>
         </div>
         <div class="selected-grid">
           <article class="selected-card">
-            <div class="selected-card-head"><h3>STARD-Net</h3><span>ACM TSAS · 2026</span></div>
-            <div class="selected-links"><a href="https://doi.org/10.1145/3787467">Paper</a><a href="https://github.com/hasiburrahman875/STARDNet">Code</a></div>
+            <div class="selected-card-head">
+              <h3>STARD-Net</h3>
+              <span>ACM TSAS · 2026</span>
+            </div>
+            <p>Tiny airborne-object detection from moving drones using spatiotemporal attention.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1145/3787467">Paper</a><a href="projects/stard-net.html">Project</a></div>
           </article>
+
           <article class="selected-card">
-            <div class="selected-card-head"><h3>KRAfT</h3><span>IEEE ICPR · 2026</span></div>
-            <div class="selected-links"><a href="https://doi.org/10.1007/978-3-032-31654-7_2">Paper</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
+            <div class="selected-card-head">
+              <h3>KRAfT</h3>
+              <span>IEEE ICPR · 2026</span>
+            </div>
+            <p>Formation-aware UAV swarm tracking with residual motion refinement and conservative recovery.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1007/978-3-032-31654-7_2">Paper</a><a href="projects/kraft.html">Project</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
           </article>
+
           <article class="selected-card">
-            <div class="selected-card-head"><h3>TARF</h3><span>ACM SIGSPATIAL · 2026</span></div>
+            <div class="selected-card-head">
+              <h3>TARF</h3>
+              <span>ACM SIGSPATIAL · 2026</span>
+            </div>
+            <p>Track-aware reliability fusion for 3D drone tracking with sparse multi-LiDAR point clouds.</p>
             <div class="selected-links"><a href="https://sigspatial2026.sigspatial.org/research-accepted/">Listing</a><a href="https://github.com/hasiburrahman875/tarf_mmuav">Code</a></div>
           </article>
+
           <article class="selected-card">
-            <div class="selected-card-head"><h3>V-USDT</h3><span>IEEE MDM · 2025</span></div>
-            <div class="selected-links"><a href="https://doi.org/10.1109/MDM65600.2025.00026">Paper</a></div>
+            <div class="selected-card-head">
+              <h3>V-USDT</h3>
+              <span>IEEE MDM · 2025</span>
+            </div>
+            <p>Vision-based UAV swarm detection and tracking using formation constraints.</p>
+            <div class="selected-links"><a href="https://doi.org/10.1109/MDM65600.2025.00026">Paper</a><a href="projects/v-usdt.html">Project</a></div>
           </article>
         </div>
       </div>
@@ -77,11 +122,13 @@
       <div class="container content-grid">
         <h2 id="news-heading">News</h2>
         <ul class="news-list">
-          <li><time datetime="2026-08-10">Aug 2026</time><span>Defended Ph.D. dissertation.</span></li>
-          <li><time datetime="2026-08">Aug 2026</time><span><a href="https://sigspatial2026.sigspatial.org/research-accepted/"><strong>TARF</strong></a> accepted at <em>ACM SIGSPATIAL 2026</em>.</span></li>
-          <li><time datetime="2026-08-04">Aug 2026</time><span><a href="https://doi.org/10.1007/978-3-032-31654-7_2"><strong>KRAfT</strong></a> published online in the <em>ICPR 2026</em> proceedings.</span></li>
-          <li><time datetime="2026-03">Mar 2026</time><span>Radiogenomic MRI poster recognized among the top three at <em>NextGen Pathways 2026</em>.</span></li>
-          <li><time datetime="2026-01">Jan 2026</time><span><a href="https://doi.org/10.1145/3787467"><strong>STARD-Net</strong></a> published in <em>ACM TSAS</em>.</span></li>
+          <li><time datetime="2026-08-10">Aug 2026</time><span>Successfully defended Ph.D. dissertation.</span></li>
+          <li><time datetime="2026-08">Aug 2026</time><span><a href="https://sigspatial2026.sigspatial.org/research-accepted/"><strong>TARF</strong></a> listed among the accepted research papers at <em>ACM SIGSPATIAL 2026</em>.</span></li>
+          <li><time datetime="2026-08-04">Aug 2026</time><span><a href="https://doi.org/10.1007/978-3-032-31654-7_2"><strong>KRAfT</strong></a> published online in the <em>ICPR 2026</em> proceedings by Springer.</span></li>
+          <li><time datetime="2026-04">Apr 2026</time><span>Passed the Ph.D. comprehensive examination.</span></li>
+          <li><time datetime="2026-03">Mar 2026</time><span><a href="https://icpr2026.org/acceptedPapers.html"><strong>KRAfT</strong></a> accepted for presentation at <em>IEEE ICPR 2026</em>.</span></li>
+          <li><time datetime="2026-03">Mar 2026</time><span>Radiogenomic MRI classification poster recognized among the top three posters at the <em>NextGen Pathways 2026 Symposium</em>.</span></li>
+          <li><time datetime="2026-01">Jan 2026</time><span><a href="https://doi.org/10.1145/3787467"><strong>STARD-Net</strong></a> published in <em>ACM Transactions on Spatial Algorithms and Systems</em>.</span></li>
         </ul>
       </div>
     </section>
