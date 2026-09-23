@@ -25,16 +25,17 @@ a:hover { text-decoration: underline; }
 
 .profile {
   display: grid;
-  grid-template-columns: 175px 1fr;
+  grid-template-columns: 185px 1fr;
   gap: 30px;
   align-items: start;
   margin-bottom: 34px;
 }
 
 .portrait {
-  width: 175px;
-  height: 210px;
-  object-fit: cover;
+  display: block;
+  width: 185px;
+  height: auto;
+  max-width: 100%;
   border-radius: 2px;
 }
 
@@ -238,8 +239,8 @@ footer {
   }
 
   .portrait {
-    width: 145px;
-    height: 174px;
+    width: 150px;
+    height: auto;
   }
 
   h1 { font-size: 30px; }
