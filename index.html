@@ -1,145 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Hasibur Rahman, Ph.D. | Multimodal Sensing & Spatiotemporal ML</title>
-  <meta name="description" content="Md Hasibur Rahman, Ph.D. works on multimodal sensing, spatiotemporal machine learning, computer vision, multi-object tracking, and biomedical AI.">
-  <meta property="og:title" content="Md Hasibur Rahman, Ph.D. | Multimodal Sensing & Spatiotemporal ML">
-  <meta property="og:description" content="Research in multimodal sensing, spatiotemporal machine learning, computer vision, tracking, and biomedical AI.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hasiburrahman875.github.io/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md Hasibur Rahman | Computer Vision & Multimodal AI</title>
+  <meta name="description" content="Md Hasibur Rahman is a Postdoctoral Fellow at Clemson University working on computer vision, spatiotemporal learning, multimodal sensing, tracking, wearable sensing, and biomedical AI.">
   <link rel="canonical" href="https://hasiburrahman875.github.io/">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="site-title" href="index.html">Md Hasibur Rahman</a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="active" aria-current="page" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="name" href="#top">Md Hasibur Rahman</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
         <a href="cv.html">CV</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-compact">
-        <div class="hero-profile-frame">
-          <img class="hero-profile-image" src="data:image/jpeg;base64,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" width="256" height="256" alt="Portrait of Md Hasibur Rahman" fetchpriority="high">
+  <main id="top">
+    <section class="hero wrap">
+      <img class="portrait" src="assets/md-hasibur-rahman.webp" alt="Md Hasibur Rahman">
+      <div>
+        <p class="kicker">Postdoctoral Fellow · Clemson University</p>
+        <h1>Md Hasibur Rahman</h1>
+        <p class="subtitle">Computer Vision · Spatiotemporal Learning · Multimodal Sensing · Biomedical AI</p>
+        <p class="intro">
+          I am a Postdoctoral Fellow in Electrical and Computer Engineering at Clemson University, working with
+          Prof. Adam Hoover. I received my Ph.D. in Computer Science from Missouri University of Science and Technology
+          in 2026 under the supervision of Prof. Sanjay Madria.
+        </p>
+        <p class="intro">
+          My research focuses on learning from dynamic and multimodal data, with work spanning small-object detection,
+          multi-object tracking, motion and state estimation, sensor fusion, and LiDAR-based 3D localization. My current
+          postdoctoral interests extend this work toward wearable sensing, multimodal time-series learning, human activity
+          and event detection, and biomedical AI.
+        </p>
+        <div class="links">
+          <a href="mailto:mdhasir@clemson.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/hasiburrahman875">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-hasibur-rahman-b9071a108/">LinkedIn</a>
+          <a href="cv.html">CV</a>
         </div>
-        <div class="hero-content">
-          <p class="eyebrow">Multimodal Sensing · Spatiotemporal Machine Learning</p>
-          <h1>Md Hasibur Rahman</h1>
-          <p class="hero-role">Ph.D. in Computer Science · Missouri University of Science and Technology</p>
-          <p class="research-line"><strong>Research:</strong> computer vision, multi-object tracking, multimodal sensing, reliable AI, and biomedical AI.</p>
-          <p class="hero-summary">I develop learning methods for dynamic systems that must reason from incomplete, noisy, and heterogeneous observations, with emphasis on reliable spatiotemporal inference.</p>
-          <div class="link-row" aria-label="Profile links">
-            <a href="mailto:hasiburrahman875@gmail.com">Email</a>
-            <a href="CV_Hasibur_Rahman_postdoc.pdf">CV</a>
-            <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a href="https://github.com/hasiburrahman875" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/md-hasibur-rahman-b9071a108/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="research" class="section wrap">
+      <h2>Research</h2>
+      <div class="research-grid">
+        <article>
+          <h3>Computer Vision & Tracking</h3>
+          <p>Small-object detection, multi-object tracking, temporal association, motion modeling, and state estimation in challenging dynamic scenes.</p>
+        </article>
+        <article>
+          <h3>Multimodal Sensing & 3D Localization</h3>
+          <p>Sensor fusion, LiDAR-based localization, temporal reasoning, and robust inference from sparse or heterogeneous observations.</p>
+        </article>
+        <article>
+          <h3>Wearable & Biomedical AI</h3>
+          <p>Multimodal time-series learning, wearable sensing, and human activity and event detection for biomedical applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section wrap">
+      <div class="section-head">
+        <h2>Selected Publications</h2>
+        <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en">Google Scholar →</a>
+      </div>
+      <div class="pub-list">
+        <article class="pub">
+          <span class="year">2026</span>
+          <div>
+            <h3>STARD-Net: SpatioTemporal Attention for Robust Detection of Tiny Airborne Objects from Moving Drones</h3>
+            <p>M. H. Rahman and S. Madria · <em>ACM Transactions on Spatial Algorithms and Systems</em>, 12(1), 1–48.</p>
           </div>
-        </div>
+        </article>
+        <article class="pub">
+          <span class="year">2026</span>
+          <div>
+            <h3>KRAfT: Kalman Residual Diffusion with Formation Awareness for UAV Swarm Tracking</h3>
+            <p>M. H. Rahman and S. Madria · <em>International Conference on Pattern Recognition (ICPR)</em>.</p>
+          </div>
+        </article>
+        <article class="pub">
+          <span class="year">2026</span>
+          <div>
+            <h3>TARF: Track-Aware Reliability Fusion for 3D Drone Localization and Trajectory Estimation with Sparse Multi-LiDAR Point Clouds</h3>
+            <p>M. H. Rahman and S. Madria · <em>ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems</em>.</p>
+          </div>
+        </article>
+        <article class="pub">
+          <span class="year">2025</span>
+          <div>
+            <h3>V-USDT: Vision-Based UAV Swarm Detection and Tracking by Leveraging Swarm Formation Constraints</h3>
+            <p>M. H. Rahman and S. Madria · <em>IEEE International Conference on Mobile Data Management (MDM)</em>, 55–61.</p>
+          </div>
+        </article>
+        <article class="pub">
+          <span class="year">2023</span>
+          <div>
+            <h3>An Augmented Dataset for Vision-based Unmanned Aerial Vehicles Detection and Tracking</h3>
+            <p>M. H. Rahman and S. Madria · <em>IEEE Applied Imagery Pattern Recognition Workshop (AIPR)</em>, 1–8.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="home-section section-tinted" aria-labelledby="focus-heading">
-      <div class="container">
-        <div class="home-section-head">
-          <h2 id="focus-heading">Research Focus</h2>
-          <a href="research.html">Research overview →</a>
-        </div>
-        <div class="focus-cards">
-          <article class="focus-card">
-            <h3>Reliable perception</h3>
-            <p>Small-object detection and tracking under missed observations, occlusion, motion uncertainty, and clutter.</p>
-          </article>
-          <article class="focus-card">
-            <h3>Multimodal sensing</h3>
-            <p>Fusion of visual, temporal, spatial, and heterogeneous sensor evidence under missing or conflicting observations.</p>
-          </article>
-          <article class="focus-card">
-            <h3>Biomedical AI</h3>
-            <p>Personalized and multimodal learning from physiological, behavioral, imaging, and wearable-sensing data.</p>
-          </article>
-        </div>
+    <section class="section wrap">
+      <h2>Datasets</h2>
+      <div class="plain-grid">
+        <article>
+          <h3>MVAAOD</h3>
+          <p>An augmented dataset developed for vision-based UAV detection and tracking and introduced in IEEE AIPR 2023.</p>
+        </article>
+        <article>
+          <h3>UAVSwarm-W2C</h3>
+          <p>A multi-UAV tracking dataset used to study temporal association, identity preservation, and formation-aware tracking.</p>
+        </article>
       </div>
     </section>
 
-    <section class="home-section" aria-labelledby="selected-heading">
-      <div class="container">
-        <div class="home-section-head">
-          <h2 id="selected-heading">Selected Work</h2>
-          <a href="publications.html">All publications →</a>
-        </div>
-        <div class="selected-grid">
-          <article class="selected-card">
-            <div class="selected-card-head">
-              <h3>STARD-Net</h3>
-              <span>ACM TSAS · 2026</span>
-            </div>
-            <p>Tiny airborne-object detection from moving drones using spatiotemporal attention.</p>
-            <div class="selected-links"><a href="https://doi.org/10.1145/3787467">Paper</a><a href="projects/stard-net.html">Project</a></div>
-          </article>
-
-          <article class="selected-card">
-            <div class="selected-card-head">
-              <h3>KRAfT</h3>
-              <span>IEEE ICPR · 2026</span>
-            </div>
-            <p>Formation-aware UAV swarm tracking with residual motion refinement and conservative recovery.</p>
-            <div class="selected-links"><a href="https://doi.org/10.1007/978-3-032-31654-7_2">Paper</a><a href="projects/kraft.html">Project</a><a href="https://github.com/hasiburrahman875/KRAfT">Code</a></div>
-          </article>
-
-          <article class="selected-card">
-            <div class="selected-card-head">
-              <h3>TARF</h3>
-              <span>ACM SIGSPATIAL · 2026</span>
-            </div>
-            <p>Track-aware reliability fusion for 3D drone tracking with sparse multi-LiDAR point clouds.</p>
-            <div class="selected-links"><a href="https://sigspatial2026.sigspatial.org/research-accepted/">Listing</a><a href="https://github.com/hasiburrahman875/tarf_mmuav">Code</a></div>
-          </article>
-
-          <article class="selected-card">
-            <div class="selected-card-head">
-              <h3>V-USDT</h3>
-              <span>IEEE MDM · 2025</span>
-            </div>
-            <p>Vision-based UAV swarm detection and tracking using formation constraints.</p>
-            <div class="selected-links"><a href="https://doi.org/10.1109/MDM65600.2025.00026">Paper</a><a href="projects/v-usdt.html">Project</a></div>
-          </article>
-        </div>
+    <section id="teaching" class="section wrap">
+      <h2>Teaching</h2>
+      <div class="timeline">
+        <article>
+          <div class="when">2018–2022</div>
+          <div>
+            <h3>Lecturer, Computer Science and Engineering</h3>
+            <p>Bangladesh University of Business and Technology</p>
+            <p class="muted">Instructor of record for Data Structures, Operating Systems, Data Mining, Internet of Things, and Computer Architecture. Supervised undergraduate thesis and capstone projects.</p>
+          </div>
+        </article>
+        <article>
+          <div class="when">2023–2026</div>
+          <div>
+            <h3>Graduate Teaching Assistant, Computer Science</h3>
+            <p>Missouri University of Science and Technology</p>
+            <p class="muted">Supported Big Data and MATLAB courses through laboratory instruction, grading, office hours, debugging, and student mentoring.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="news-section" aria-labelledby="news-heading">
-      <div class="container content-grid">
-        <h2 id="news-heading">News</h2>
-        <ul class="news-list">
-          <li><time datetime="2026-08-10">Aug 2026</time><span>Successfully defended Ph.D. dissertation.</span></li>
-          <li><time datetime="2026-08">Aug 2026</time><span><a href="https://sigspatial2026.sigspatial.org/research-accepted/"><strong>TARF</strong></a> listed among the accepted research papers at <em>ACM SIGSPATIAL 2026</em>.</span></li>
-          <li><time datetime="2026-08-04">Aug 2026</time><span><a href="https://doi.org/10.1007/978-3-032-31654-7_2"><strong>KRAfT</strong></a> published online in the <em>ICPR 2026</em> proceedings by Springer.</span></li>
-          <li><time datetime="2026-04">Apr 2026</time><span>Passed the Ph.D. comprehensive examination.</span></li>
-          <li><time datetime="2026-03">Mar 2026</time><span><a href="https://icpr2026.org/acceptedPapers.html"><strong>KRAfT</strong></a> accepted for presentation at <em>IEEE ICPR 2026</em>.</span></li>
-          <li><time datetime="2026-03">Mar 2026</time><span>Radiogenomic MRI classification poster recognized among the top three posters at the <em>NextGen Pathways 2026 Symposium</em>.</span></li>
-          <li><time datetime="2026-01">Jan 2026</time><span><a href="https://doi.org/10.1145/3787467"><strong>STARD-Net</strong></a> published in <em>ACM Transactions on Spatial Algorithms and Systems</em>.</span></li>
-        </ul>
+    <section class="section wrap">
+      <h2>Education & Recognition</h2>
+      <div class="plain-grid">
+        <article>
+          <h3>Ph.D. in Computer Science</h3>
+          <p>Missouri University of Science and Technology, 2026 · GPA 4.00/4.00</p>
+          <p class="muted">Dissertation: <em>Robust Detection and Tracking of Unmanned Aerial Vehicles in Challenging Aerial Environments</em>.</p>
+        </article>
+        <article>
+          <h3>B.Sc. in Computer Science and Engineering</h3>
+          <p>Rajshahi University of Engineering &amp; Technology, 2017 · GPA 3.74/4.00 · Rank 7/120</p>
+        </article>
+        <article>
+          <h3>Selected Recognition</h3>
+          <p>Top 3 Best Poster, Pathways 2026 Symposium, NextGen Precision Health.</p>
+          <p class="muted">NAIRR Pilot Resource Allocation for A100/H100-class GPU resources.</p>
+        </article>
       </div>
+    </section>
+
+    <section id="contact" class="section contact wrap">
+      <h2>Contact</h2>
+      <p><strong>Md Hasibur Rahman</strong><br>
+        Postdoctoral Fellow, Department of Electrical and Computer Engineering<br>
+        Clemson University
+      </p>
+      <p>
+        <a href="mailto:mdhasir@clemson.edu">mdhasir@clemson.edu</a> ·
+        <a href="https://scholar.google.com/citations?user=_yCPMAcAAAAJ&amp;hl=en">Google Scholar</a> ·
+        <a href="https://github.com/hasiburrahman875">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/md-hasibur-rahman-b9071a108/">LinkedIn</a>
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> Md Hasibur Rahman</p>
-      <p><a href="mailto:hasiburrahman875@gmail.com">hasiburrahman875@gmail.com</a></p>
-    </div>
+  <footer>
+    <div class="wrap">© 2026 Md Hasibur Rahman</div>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
