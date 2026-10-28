@@ -130,20 +130,28 @@ li { margin: 5px 0; }
   padding-bottom: 0;
 }
 
+/* Compact paired media: architecture is intentionally smaller than the demo. */
 .research-media-pair {
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
+  grid-template-columns: 300px 400px;
   gap: 18px;
-  align-items: stretch;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .research-feature-kraft .research-media-pair {
-  grid-template-columns: 1.12fr 0.88fr;
+  grid-template-columns: 320px 400px;
 }
 
-.research-media-pair .research-visual,
+.research-media-pair .research-visual {
+  height: 225px;
+}
+
 .research-video {
-  height: 255px;
+  width: 400px;
+  aspect-ratio: 16 / 9;
 }
 
 .research-visual {
@@ -346,8 +354,10 @@ footer {
 
 @media (max-width: 760px) {
   .research-media-pair,
+  .research-feature-kraft .research-media-pair,
   .research-feature-wide {
     grid-template-columns: 1fr;
+    width: 100%;
     gap: 10px;
   }
 
