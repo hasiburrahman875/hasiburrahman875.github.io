@@ -25,6 +25,40 @@
   max-width: 710px;
 }
 
+/* Projects directory: compact embedded demos beside project summaries. */
+.directory-entry-media {
+  grid-template-columns: 108px minmax(0, 1fr) minmax(260px, 320px);
+  align-items: start;
+}
+
+.directory-copy {
+  min-width: 0;
+}
+
+.directory-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #0f1720;
+}
+
+.directory-video iframe,
+.directory-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 860px) {
+  .directory-entry-media {
+    grid-template-columns: 96px minmax(0, 1fr) minmax(220px, 260px);
+    gap: 16px;
+  }
+}
+
 @media (max-width: 760px) {
   .hero-compact {
     grid-template-columns: 96px minmax(0, 1fr);
@@ -38,5 +72,15 @@
 
   .hero {
     padding: 17px 0 16px;
+  }
+
+  .directory-entry-media {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .directory-video {
+    width: min(100%, 520px);
+    margin-top: 6px;
   }
 }
